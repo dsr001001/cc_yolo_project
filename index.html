@@ -4,24 +4,26 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
 <meta name="mobile-web-app-capable" content="yes">
-<title>Pong</title>
+<title>Pinball</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-  html, body { width: 100%; height: 100%; overflow: hidden; background: #000; touch-action: none; overscroll-behavior: none; }
+  html, body { width: 100%; height: 100%; overflow: hidden; background: #000; touch-action: none; }
   body { display: flex; align-items: center; justify-content: center; font-family: -apple-system, system-ui, sans-serif; color: #fff; }
-  canvas { display: block; background: #000; touch-action: none; }
-  #overlay { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(0,0,0,0.88); text-align: center; padding: 20px; z-index: 10; }
-  #overlay h1 { font-size: 44px; letter-spacing: 8px; margin-bottom: 10px; }
-  #overlay p { font-size: 15px; opacity: 0.85; margin-bottom: 20px; line-height: 1.5; }
-  #overlay button { padding: 14px 30px; font-size: 18px; background: #fff; color: #000; border: none; border-radius: 4px; cursor: pointer; }
+  canvas { display: block; background: #001; touch-action: none; }
+  #hud { position: fixed; top: 0; left: 0; right: 0; padding: 8px; background: rgba(0,0,0,0.7); font-size: 20px; font-weight: bold; display: flex; justify-content: space-between; z-index: 5; }
+  #overlay { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(0,0,0,0.92); text-align: center; padding: 20px; z-index: 10; }
+  #overlay h1 { font-size: 48px; margin-bottom: 12px; }
+  #overlay p { font-size: 18px; margin-bottom: 20px; opacity: 0.85; }
+  #overlay button { padding: 14px 28px; font-size: 18px; background: #fff; color: #000; border: none; border-radius: 4px; cursor: pointer; }
   .hidden { display: none !important; }
 </style>
 </head>
 <body>
+<div id="hud"><span>PINBALL</span> <span id="score">0</span> <span id="balls">●●●</span></div>
 <canvas id="game"></canvas>
 <div id="overlay">
-  <h1>PONG</h1>
-  <p>Drag on your side to move.<br>Hit edges for spin. Longer rallies = bigger points.<br>First to 5 drops loses.</p>
+  <h1>PINBALL</h1>
+  <p id="msg">Tap left/right to flip. Keep the ball alive!</p>
   <button id="start">Start</button>
 </div>
 <script>
@@ -29,33 +31,36 @@
   const canvas = document.getElementById('game');
   const ctx = canvas.getContext('2d');
   const overlay = document.getElementById('overlay');
+  const scoreEl = document.getElementById('score');
+  const ballsEl = document.getElementById('balls');
   const startBtn = document.getElementById('start');
+  const msgEl = document.getElementById('msg');
 
   let W, H;
   function resize() {
     W = canvas.width = window.innerWidth * devicePixelRatio;
-    H = canvas.height = window.innerHeight * devicePixelRatio;
+    H = canvas.innerHeight = window.innerHeight * devicePixelRatio;
     canvas.style.width = window.innerWidth + 'px';
     canvas.style.height = window.innerHeight + 'px';
   }
   window.addEventListener('resize', resize);
   resize();
 
-  // ---------- Audio (WebAudio synth, no files) ----------
+  // Audio synth
   let audio = null;
   function ensureAudio() {
     if (!audio) {
       const AC = window.AudioContext || window.webkitAudioContext;
       if (AC) audio = new AC();
     }
-    if (audio && audio.state === 'suspended') audio.resume();
+    if (audio?.state === 'suspended') audio.resume();
   }
-  function beep(freq, dur, type = 'square', gain = 0.15) {
+  function beep(freq, dur, gain = 0.12) {
     if (!audio) return;
     const t = audio.currentTime;
     const osc = audio.createOscillator();
     const g = audio.createGain();
-    osc.type = type;
+    osc.type = 'square';
     osc.frequency.setValueAtTime(freq, t);
     g.gain.setValueAtTime(gain, t);
     g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
@@ -63,306 +68,218 @@
     osc.start(t);
     osc.stop(t + dur);
   }
-  function sweep(f1, f2, dur, type = 'sawtooth', gain = 0.18) {
-    if (!audio) return;
-    const t = audio.currentTime;
-    const osc = audio.createOscillator();
-    const g = audio.createGain();
-    osc.type = type;
-    osc.frequency.setValueAtTime(f1, t);
-    osc.frequency.exponentialRampToValueAtTime(f2, t + dur);
-    g.gain.setValueAtTime(gain, t);
-    g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
-    osc.connect(g).connect(audio.destination);
-    osc.start(t);
-    osc.stop(t + dur);
-  }
-  function noiseBurst(dur, gain = 0.3, bandpass = 1200) {
-    if (!audio) return;
-    const t = audio.currentTime;
-    const bufSize = Math.floor(audio.sampleRate * dur);
-    const buf = audio.createBuffer(1, bufSize, audio.sampleRate);
-    const data = buf.getChannelData(0);
-    for (let i = 0; i < bufSize; i++) data[i] = (Math.random() * 2 - 1) * (1 - i / bufSize);
-    const src = audio.createBufferSource();
-    src.buffer = buf;
-    const bp = audio.createBiquadFilter();
-    bp.type = 'bandpass';
-    bp.frequency.value = bandpass;
-    bp.Q.value = 1.2;
-    const g = audio.createGain();
-    g.gain.setValueAtTime(gain, t);
-    g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
-    src.connect(bp).connect(g).connect(audio.destination);
-    src.start(t);
-    src.stop(t + dur);
-  }
-  // Clap = stacked noise bursts (like several hands)
-  function clap() {
-    noiseBurst(0.04, 0.35, 1500);
-    setTimeout(() => noiseBurst(0.04, 0.3, 1400), 25);
-    setTimeout(() => noiseBurst(0.05, 0.35, 1600), 55);
-    setTimeout(() => noiseBurst(0.08, 0.25, 1300), 95);
-  }
-  function sndPaddle(speed) { beep(400 + Math.min(800, speed * 40), 0.05, 'square', 0.15); }
-  function sndWall() { beep(220, 0.04, 'square', 0.1); }
-  function sndDrop() { sweep(300, 80, 0.35, 'sawtooth', 0.2); }
-  function sndWin() { setTimeout(() => beep(660, 0.12, 'square', 0.18), 0); setTimeout(() => beep(880, 0.12, 'square', 0.18), 120); setTimeout(() => beep(1320, 0.24, 'square', 0.18), 240); }
-  function sndLose() { setTimeout(() => beep(330, 0.14, 'sawtooth', 0.18), 0); setTimeout(() => beep(220, 0.14, 'sawtooth', 0.18), 140); setTimeout(() => beep(165, 0.28, 'sawtooth', 0.18), 280); }
+  function sndBumper() { beep(800, 0.08); }
+  function sndFlipper() { beep(500, 0.06); }
+  function sndDrain() { setTimeout(() => beep(300, 0.15), 0); setTimeout(() => beep(200, 0.15), 150); }
+  function sndCombo(level) { const f = 400 + level * 100; beep(f, 0.1); }
 
-  // ---------- Game state ----------
   const state = {
-    playerY: 0, aiY: 0, paddleH: 0, paddleW: 0,
-    ballX: 0, ballY: 0, ballVX: 0, ballVY: 0, ballR: 0, spin: 0,
-    baseSpeed: 0, speedMul: 1,
-    rally: 0,
-    playerScore: 0, aiScore: 0,
-    playerDrops: 0, aiDrops: 0,
-    running: false, winner: null,
+    ballX: 0, ballY: 0, ballVX: 0, ballVY: 0, ballR: 0,
+    leftFlipY: 0, rightFlipY: 0, flipperL: false, flipperR: false,
+    score: 0, combo: 0, comboT: 0, balls: 3, running: false, gameOver: false,
+    bumpers: [], ramps: [],
     flashT: 0, flashMsg: '', flashX: 0, flashY: 0
   };
 
-  function setInitialSizes() {
-    state.paddleH = H * 0.18;
-    state.paddleW = Math.max(8 * devicePixelRatio, W * 0.015);
-    state.ballR = Math.max(7 * devicePixelRatio, W * 0.013);
-    state.baseSpeed = Math.min(W, H) * 0.009;
+  function init() {
+    state.ballR = W * 0.025;
+    const margin = W * 0.1;
+    state.leftFlipY = H - H * 0.15;
+    state.rightFlipY = H - H * 0.15;
+
+    // Bumpers (5-7 scattered)
+    state.bumpers = [
+      {x: W*0.25, y: H*0.2, r: W*0.035, hit: false},
+      {x: W*0.75, y: H*0.22, r: W*0.035, hit: false},
+      {x: W*0.5, y: H*0.35, r: W*0.035, hit: false},
+      {x: W*0.2, y: H*0.5, r: W*0.035, hit: false},
+      {x: W*0.8, y: H*0.48, r: W*0.035, hit: false},
+      {x: W*0.5, y: H*0.65, r: W*0.035, hit: false},
+    ];
+
+    newBall();
   }
 
-  function serve(serveRight) {
-    setInitialSizes();
-    state.playerY = H / 2 - state.paddleH / 2;
-    state.aiY = H / 2 - state.paddleH / 2;
-    state.ballX = W / 2;
-    state.ballY = H / 2;
-    state.speedMul = 1;
-    state.rally = 0;
-    state.spin = 0;
-    const angle = (Math.random() - 0.5) * 0.5;
-    state.ballVX = (serveRight ? 1 : -1) * state.baseSpeed * Math.cos(angle);
-    state.ballVY = state.baseSpeed * Math.sin(angle);
+  function newBall() {
+    state.ballX = W * 0.5;
+    state.ballY = H * 0.05;
+    state.ballVX = (Math.random() - 0.5) * 2;
+    state.ballVY = 1;
+    state.combo = 0;
+    state.comboT = 0;
+    state.bumpers.forEach(b => b.hit = false);
   }
 
-  // ---------- Input ----------
-  function pointerMove(e) {
+  // Input
+  document.addEventListener('touchstart', (e) => {
     ensureAudio();
     if (!state.running) return;
-    const touches = e.touches ? Array.from(e.touches) : [{clientX: e.clientX, clientY: e.clientY}];
-    for (const t of touches) {
-      const x = t.clientX * devicePixelRatio;
-      const y = t.clientY * devicePixelRatio;
-      if (x < W / 2) {
-        state.playerY = Math.max(0, Math.min(H - state.paddleH, y - state.paddleH / 2));
+    for (const t of e.touches) {
+      if (t.clientX * devicePixelRatio < W / 2) state.flipperL = true;
+      else state.flipperR = true;
+    }
+  });
+  document.addEventListener('touchend', () => {
+    state.flipperL = false;
+    state.flipperR = false;
+  });
+
+  // Physics
+  function step() {
+    if (!state.running || state.gameOver) return;
+
+    const g = H * 0.0008; // gravity
+    state.ballVY += g;
+    state.ballVX *= 0.995; // air resistance
+    state.ballVY = Math.min(state.ballVY, H * 0.01);
+
+    state.ballX += state.ballVX;
+    state.ballY += state.ballVY;
+
+    // Walls
+    if (state.ballX - state.ballR < 0) { state.ballX = state.ballR; state.ballVX *= -0.8; }
+    if (state.ballX + state.ballR > W) { state.ballX = W - state.ballR; state.ballVX *= -0.8; }
+    if (state.ballY - state.ballR < 0) { state.ballY = state.ballR; state.ballVY *= -0.8; }
+
+    // Bumpers
+    state.bumpers.forEach(b => {
+      const dx = state.ballX - b.x;
+      const dy = state.ballY - b.y;
+      const d = Math.hypot(dx, dy);
+      if (d < state.ballR + b.r) {
+        const a = Math.atan2(dy, dx);
+        state.ballX = b.x + Math.cos(a) * (state.ballR + b.r);
+        state.ballY = b.y + Math.sin(a) * (state.ballR + b.r);
+        const spd = 12;
+        state.ballVX = Math.cos(a) * spd;
+        state.ballVY = Math.sin(a) * spd;
+        if (!b.hit) {
+          b.hit = true;
+          state.score += 100 * Math.max(1, Math.floor(state.combo / 2));
+          state.combo++;
+          state.comboT = 120;
+          sndBumper();
+          flash(`+${100 * Math.max(1, Math.floor(state.combo / 2))}`, b.x, b.y);
+        }
+      }
+    });
+
+    // Flippers
+    const flipL = {x: W*0.35, y: state.leftFlipY, len: W*0.12, angle: state.flipperL ? -0.4 : 0.3};
+    const flipR = {x: W*0.65, y: state.rightFlipY, len: W*0.12, angle: state.flipperR ? 0.4 : -0.3};
+
+    for (const flip of [flipL, flipR]) {
+      const fx = flip.x + Math.cos(flip.angle) * flip.len;
+      const fy = flip.y + Math.sin(flip.angle) * flip.len;
+      const closest = closest2D(state.ballX, state.ballY, flip.x, flip.y, fx, fy, state.ballR);
+      if (closest.d < state.ballR) {
+        state.ballX = closest.x + closest.nx * state.ballR;
+        state.ballY = closest.y + closest.ny * state.ballR;
+        const spd = state.flipperL || state.flipperR ? 16 : 8;
+        state.ballVX = closest.nx * spd;
+        state.ballVY = closest.ny * spd - 2;
+        sndFlipper();
       }
     }
-    e.preventDefault();
-  }
-  canvas.addEventListener('touchstart', pointerMove, { passive: false });
-  canvas.addEventListener('touchmove', pointerMove, { passive: false });
-  canvas.addEventListener('mousemove', pointerMove);
 
-  // ---------- Scoring helpers ----------
-  function rallyPoints(rally) {
-    // 1 pt base, +1 every 3 hits, capped at 5
-    return Math.min(5, 1 + Math.floor(rally / 3));
+    // Drain (fall off bottom)
+    if (state.ballY > H + state.ballR) {
+      sndDrain();
+      state.balls--;
+      ballsEl.textContent = '●'.repeat(Math.max(0, state.balls));
+      if (state.balls <= 0) {
+        state.gameOver = true;
+        state.running = false;
+        setTimeout(showGameOver, 500);
+      } else {
+        newBall();
+      }
+    }
+
+    if (state.comboT > 0) state.comboT--;
+    if (state.flashT > 0) state.flashT--;
+  }
+
+  // Closest point on line segment to circle
+  function closest2D(cx, cy, x1, y1, x2, y2, r) {
+    const dx = x2 - x1, dy = y2 - y1;
+    let t = Math.max(0, Math.min(1, ((cx - x1) * dx + (cy - y1) * dy) / (dx * dx + dy * dy)));
+    const px = x1 + t * dx;
+    const py = y1 + t * dy;
+    const d = Math.hypot(cx - px, cy - py);
+    const nx = d > 0 ? (cx - px) / d : 0;
+    const ny = d > 0 ? (cy - py) / d : -1;
+    return {x: px, y: py, d, nx, ny};
   }
 
   function flash(msg, x, y) {
-    state.flashT = 60;
+    state.flashT = 40;
     state.flashMsg = msg;
     state.flashX = x;
     state.flashY = y;
   }
 
-  // ---------- Physics step ----------
-  function step() {
-    if (!state.running) return;
-
-    // Spin curves the ball's y-velocity over time (Magnus-ish)
-    state.ballVY += state.spin * 0.04;
-    // Spin decays
-    state.spin *= 0.995;
-
-    // Cap speed sanity
-    const maxSpeed = state.baseSpeed * 4;
-    const sp = Math.hypot(state.ballVX, state.ballVY);
-    if (sp > maxSpeed) {
-      state.ballVX = state.ballVX / sp * maxSpeed;
-      state.ballVY = state.ballVY / sp * maxSpeed;
-    }
-
-    state.ballX += state.ballVX;
-    state.ballY += state.ballVY;
-
-    if (state.ballY - state.ballR < 0) {
-      state.ballY = state.ballR; state.ballVY *= -1; sndWall();
-    }
-    if (state.ballY + state.ballR > H) {
-      state.ballY = H - state.ballR; state.ballVY *= -1; sndWall();
-    }
-
-    // Player paddle collision
-    const pPadX = state.paddleW * 1.5;
-    if (state.ballVX < 0 &&
-        state.ballX - state.ballR < pPadX + state.paddleW &&
-        state.ballX - state.ballR > pPadX - state.paddleW * 2 &&
-        state.ballY > state.playerY && state.ballY < state.playerY + state.paddleH) {
-      state.ballX = pPadX + state.paddleW + state.ballR;
-      state.ballVX = Math.abs(state.ballVX);
-      onPaddleHit('player');
-    }
-
-    // AI paddle collision
-    const aPadX = W - state.paddleW * 1.5;
-    if (state.ballVX > 0 &&
-        state.ballX + state.ballR > aPadX - state.paddleW &&
-        state.ballX + state.ballR < aPadX + state.paddleW * 2 &&
-        state.ballY > state.aiY && state.ballY < state.aiY + state.paddleH) {
-      state.ballX = aPadX - state.paddleW - state.ballR;
-      state.ballVX = -Math.abs(state.ballVX);
-      onPaddleHit('ai');
-    }
-
-    // AI tracking with slight lead & imperfect speed
-    const aiCenter = state.aiY + state.paddleH / 2;
-    const aiSpeed = Math.min(W, H) * 0.0075 * (1 + state.speedMul * 0.08);
-    const target = state.ballX > W * 0.5 ? state.ballY : H / 2;
-    if (aiCenter < target - 8) state.aiY += aiSpeed;
-    else if (aiCenter > target + 8) state.aiY -= aiSpeed;
-    state.aiY = Math.max(0, Math.min(H - state.paddleH, state.aiY));
-
-    // Out of bounds → drop
-    if (state.ballX < -state.ballR) {
-      handleDrop('player');
-    } else if (state.ballX > W + state.ballR) {
-      handleDrop('ai');
-    }
-
-    if (state.flashT > 0) state.flashT--;
-  }
-
-  function onPaddleHit(who) {
-    state.rally++;
-    state.speedMul = Math.min(3.0, state.speedMul * 1.06);
-
-    const paddleY = who === 'player' ? state.playerY : state.aiY;
-    const paddleCenter = paddleY + state.paddleH / 2;
-    const offset = (state.ballY - paddleCenter) / (state.paddleH / 2); // -1..1
-
-    // Angle off the paddle
-    const newSpeed = state.baseSpeed * state.speedMul;
-    const incomingAngle = Math.atan2(state.ballVY, state.ballVX);
-    const outgoingAngleY = offset * 0.8; // up to ~45deg off horizontal
-    const sign = Math.sign(state.ballVX) || 1;
-    state.ballVX = sign * newSpeed * Math.cos(outgoingAngleY);
-    state.ballVY = newSpeed * Math.sin(outgoingAngleY);
-
-    // Spin imparted from edge hits (absolute offset)
-    state.spin = offset * state.baseSpeed * 0.6;
-
-    // Edge-hit = "good hit" → clap
-    const edgeHit = Math.abs(offset) > 0.6;
-    if (edgeHit) clap();
-    sndPaddle(state.speedMul * 10);
-
-    if (state.rally > 0 && state.rally % 3 === 0) {
-      flash(`RALLY x${state.rally}`, W / 2, H * 0.35);
-    }
-  }
-
-  function handleDrop(who) {
-    // who = who dropped
-    sndDrop();
-    if (who === 'player') {
-      state.playerDrops++;
-      const pts = rallyPoints(state.rally);
-      state.aiScore += pts;
-      flash(`AI +${pts}`, W * 0.75, H * 0.3);
-    } else {
-      state.aiDrops++;
-      const pts = rallyPoints(state.rally);
-      state.playerScore += pts;
-      flash(`YOU +${pts}`, W * 0.25, H * 0.3);
-    }
-    if (state.playerDrops >= 5 || state.aiDrops >= 5) {
-      if (state.playerDrops >= 5) { state.winner = 'YOU LOSE'; sndLose(); }
-      else { state.winner = 'YOU WIN'; sndWin(); clap(); setTimeout(clap, 200); setTimeout(clap, 420); }
-      state.running = false;
-      setTimeout(showOverlay, 600);
-      return;
-    }
-    serve(who === 'player'); // losing side serves next, ball goes toward them
-  }
-
-  // ---------- Rendering ----------
-  function showOverlay() {
-    overlay.querySelector('h1').textContent = state.winner || 'PONG';
-    overlay.querySelector('p').innerHTML = state.winner
-      ? `Final — You: ${state.playerScore} pts / ${state.playerDrops} drops<br>AI: ${state.aiScore} pts / ${state.aiDrops} drops`
-      : 'Drag on your side to move.<br>Hit edges for spin. Longer rallies = bigger points.<br>First to 5 drops loses.';
-    startBtn.textContent = state.winner ? 'Play Again' : 'Start';
+  function showGameOver() {
+    msgEl.textContent = `Game Over! Final Score: ${state.score}`;
+    startBtn.textContent = 'Play Again';
     overlay.classList.remove('hidden');
   }
 
   function draw() {
-    ctx.fillStyle = '#000';
+    ctx.fillStyle = '#001';
     ctx.fillRect(0, 0, W, H);
 
-    // Center line
-    ctx.strokeStyle = '#333';
-    ctx.lineWidth = 2 * devicePixelRatio;
-    ctx.setLineDash([10 * devicePixelRatio, 10 * devicePixelRatio]);
-    ctx.beginPath(); ctx.moveTo(W/2, 0); ctx.lineTo(W/2, H); ctx.stroke();
-    ctx.setLineDash([]);
-
-    // Scores & drops
-    ctx.fillStyle = '#fff';
-    ctx.font = `${Math.floor(H * 0.12)}px monospace`;
-    ctx.textAlign = 'center';
-    ctx.fillText(state.playerScore, W * 0.25, H * 0.18);
-    ctx.fillText(state.aiScore, W * 0.75, H * 0.18);
-
-    ctx.font = `${Math.floor(H * 0.035)}px monospace`;
-    ctx.fillStyle = '#888';
-    ctx.fillText(`drops ${state.playerDrops}/5`, W * 0.25, H * 0.24);
-    ctx.fillText(`drops ${state.aiDrops}/5`, W * 0.75, H * 0.24);
-
-    // Rally indicator
-    if (state.rally > 0 && state.running) {
-      ctx.fillStyle = state.rally >= 9 ? '#ff6' : state.rally >= 6 ? '#fd6' : state.rally >= 3 ? '#fff' : '#666';
-      ctx.font = `${Math.floor(H * 0.045)}px monospace`;
-      ctx.fillText(`rally ${state.rally}  ·  x${state.speedMul.toFixed(2)}`, W / 2, H * 0.08);
-    }
-
-    // Paddles
-    ctx.fillStyle = '#fff';
-    ctx.fillRect(state.paddleW, state.playerY, state.paddleW, state.paddleH);
-    ctx.fillRect(W - state.paddleW * 2, state.aiY, state.paddleW, state.paddleH);
-
-    // Ball (spin indicator: small rotating tick)
-    ctx.save();
-    ctx.translate(state.ballX, state.ballY);
-    ctx.fillStyle = '#fff';
-    ctx.beginPath(); ctx.arc(0, 0, state.ballR, 0, Math.PI * 2); ctx.fill();
-    if (Math.abs(state.spin) > 0.05) {
-      ctx.strokeStyle = '#000';
-      ctx.lineWidth = 2 * devicePixelRatio;
-      const a = performance.now() * 0.01 * Math.sign(state.spin);
+    // Bumpers
+    ctx.fillStyle = '#f80';
+    state.bumpers.forEach(b => {
+      ctx.globalAlpha = b.hit ? 0.5 : 1;
       ctx.beginPath();
-      ctx.moveTo(Math.cos(a) * state.ballR * 0.2, Math.sin(a) * state.ballR * 0.2);
-      ctx.lineTo(Math.cos(a) * state.ballR * 0.9, Math.sin(a) * state.ballR * 0.9);
+      ctx.arc(b.x, b.y, b.r, 0, Math.PI * 2);
+      ctx.fill();
+    });
+    ctx.globalAlpha = 1;
+
+    // Flippers
+    ctx.strokeStyle = '#4f8';
+    ctx.lineWidth = W * 0.015;
+    const flipL = {x: W*0.35, y: state.leftFlipY, len: W*0.12, angle: state.flipperL ? -0.4 : 0.3};
+    const flipR = {x: W*0.65, y: state.rightFlipY, len: W*0.12, angle: state.flipperR ? 0.4 : -0.3};
+    for (const flip of [flipL, flipR]) {
+      const fx = flip.x + Math.cos(flip.angle) * flip.len;
+      const fy = flip.y + Math.sin(flip.angle) * flip.len;
+      ctx.beginPath();
+      ctx.moveTo(flip.x, flip.y);
+      ctx.lineTo(fx, fy);
       ctx.stroke();
     }
-    ctx.restore();
 
-    // Flash message
+    // Ball
+    ctx.fillStyle = '#fff';
+    ctx.beginPath();
+    ctx.arc(state.ballX, state.ballY, state.ballR, 0, Math.PI * 2);
+    ctx.fill();
+
+    // Combo indicator
+    if (state.comboT > 0) {
+      ctx.globalAlpha = Math.min(1, state.comboT / 30);
+      ctx.fillStyle = state.combo > 3 ? '#f00' : state.combo > 1 ? '#ff0' : '#0f0';
+      ctx.font = `bold ${Math.floor(H * 0.08)}px monospace`;
+      ctx.textAlign = 'center';
+      ctx.fillText(`×${state.combo}`, W / 2, H * 0.15);
+      ctx.globalAlpha = 1;
+    }
+
+    // Flash score
     if (state.flashT > 0) {
-      ctx.globalAlpha = Math.min(1, state.flashT / 30);
-      ctx.fillStyle = '#ff6';
-      ctx.font = `bold ${Math.floor(H * 0.06)}px monospace`;
+      ctx.globalAlpha = Math.min(1, state.flashT / 20);
+      ctx.fillStyle = '#ff0';
+      ctx.font = `bold ${Math.floor(H * 0.05)}px monospace`;
       ctx.fillText(state.flashMsg, state.flashX, state.flashY);
       ctx.globalAlpha = 1;
     }
+
+    // Update HUD
+    scoreEl.textContent = state.score;
   }
 
   function loop() {
@@ -373,13 +290,15 @@
 
   startBtn.addEventListener('click', () => {
     ensureAudio();
-    state.playerScore = 0; state.aiScore = 0;
-    state.playerDrops = 0; state.aiDrops = 0;
-    state.winner = null;
-    resize();
-    serve(Math.random() < 0.5);
+    state.score = 0;
+    state.balls = 3;
+    state.gameOver = false;
     state.running = true;
+    ballsEl.textContent = '●●●';
+    scoreEl.textContent = '0';
+    msgEl.textContent = 'Tap left/right to flip. Keep the ball alive!';
     overlay.classList.add('hidden');
+    init();
   });
 
   draw();
