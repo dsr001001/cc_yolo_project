@@ -144,4 +144,33 @@ Note: the same block, with the same two offer bullets, is also on barclays.co.uk
 2. If the fee stays, can the pound cost on a typical transfer be printed next to the percentage (for example "3.15% fee, £94.50 on £3,000"), so a model compares pounds rather than a threshold?
 3. Are the 24 and 21 month combined cards meant to compete on balance transfers at all, given the 3.45% fee, or are they purchase-led products that should not sit in the balance-transfer listing?
 
+**Decision (11 October 2026): closed.**
+1. The 3.15% fee is a conscious pricing decision. The Head of Credit Cards and team run a pricing playbook that checks price against returns; the commercial team reviews it weekly. No change proposed from this study.
+2. Printing the pound cost next to the percentage: not adopted; it could be controversial.
+3. Whether the 24 and 21 month combined cards belong in the balance-transfer listing: deferred.
+
+**Implication for the deck.** The fee is presented as a known trade-off, not a problem: the models' tie-breaks on 3.15% against 3.09% are reported as observed behaviour, and the actions that recover Barclaycard's position are the disclosure and distribution items (1 to 5), which do not touch price.
+
+## 7. Measuring whether the changes work
+
+**Proposal.** Rerun the same protocol (Oct11_3pm/protocol.md: same persona, two credit profiles, four model families, five turns, web search on) monthly, and report:
+
+| Metric | Baseline, 11 October 2026 |
+|---|---|
+| Barclaycard in the unprompted final top three (turn 2) | 1 of 8 |
+| Barclaycard in the top three once the user names it (turn 3) | 7 of 8 |
+| Barclaycard the single card to apply for (turn 4) | 0 of 8 |
+| Runs that see the 22 month card from a comparison guide, not only from barclaycard.co.uk | 0 of 8 |
+| Runs that describe a Barclaycard term as "up to" or "not guaranteed" after reading barclaycard.co.uk | 7 of 8 |
+| Runs with a wrong Barclaycard eligibility claim | 1 of 8 |
+| Runs that list eligibility or soft-search status as missing at turn 5 | 8 of 8 |
+| Runs quoting a Barclaycard fee or APR that differs from barclaycard.co.uk on the day | 3 of 8 (3.45% in Opus B; 28.9% seen by two runs) |
+| Runs reporting a Barclaycard page 404 or using a search page as the source | 5 of 8 |
+
+Eight runs is a small sample: one run moving changes a rate by 12.5 points, so read three months of direction, not a single month. Keep all four model families so a change in one vendor's retrieval is not read as a market change.
+
+**Questions put to the Head of Credit Cards.**
+1. Who owns the monthly rerun and the report: the card team, digital, or the agency?
+2. Should the persona set widen (a £5,000 debt, a 36 month plan, a customer who already banks with Barclays) once the first changes are live?
+
 **Decision.** Open.
