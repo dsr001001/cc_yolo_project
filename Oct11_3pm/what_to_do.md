@@ -67,4 +67,22 @@ Three facts the models did not have:
 2. Is the tier structure on MSE (36, 32 or 18) current, and does Barclaycard supply it or does MSE infer it?
 3. Is there a case for making one card "definite" (every accepted applicant gets the full term), given that HSBC's product is in fact also conditional and wins on the label alone?
 
+**Decision (11 October 2026): closed.** Do not publish the full-term share or the downsell tiers: the exact downsell durations are hard to maintain, and revealing them may scare applicants away. Instead, replace "up to N months" with a long but clear, definite list of the options an accepted applicant can be offered, each stated as a definite term with its fee and rate (for example: 36 months at 0% with a 3.15% fee; 32 months at 0% with a 3.15% fee; 18 months at 0% with a 3.15% fee), with one line saying the option offered depends on the eligibility assessment and is shown by the checker before applying. The aim is that a model reads definite terms, not an open-ended "up to".
+
+**Notes for implementation.**
+- The list must match what the decision engine can actually offer, and change when it changes; that is the maintenance cost the item accepts in place of publishing shares.
+- MSE's "definite" label is for cards where every accepted applicant gets the full term. A definite list does not earn that label on its own; what it earns is a model that can quote each option as a fixed term, and a checker result that maps to one of them. Ask MSE to show the list rather than "36, 32 or 18".
+- Apply the same format to the 22 month card (22 or 11 months, per its own page) and the 12 month card (12 or 6).
+
+**Test after the change.** Rerun the protocol. Falsified as a fix if a model still describes the Barclaycard term as "up to" or "not guaranteed" after reading barclaycard.co.uk, or if the listed options differ from what the checker returns.
+
+## 4. Promotional text sits inside the card's terms block
+
+**Problem found.** On the listing page the 36 month card's block opens with two promotional bullets (12 months of Apple TV; £20 cashback, which needs an application in the Barclays app and a Barclays personal current account) before the 0% term, the fee and the transfer window. Sonnet B read the cashback condition as a card condition and excluded the card: "Platinum up to 36 month: not available to you. Barclaycard's page says it requires a Barclays personal current account." It repeated the exclusion at turns 4 and 5. Fable asked whether the user has a Barclays current account in both runs because of the cashback, and in B dismissed the 36 month card in the same breath. Haiku A, Opus A, Opus B and Fable A each spent a paragraph establishing that the cashback does not apply. Opus A alone treated the Apple TV offer as a tie-breaker in Barclaycard's favour. Evidence: E1; transcripts B-sonnet turn 3 line 119, A-fable and B-fable turn 1, A-opus turn 4.
+
+**Questions put to the Head of Credit Cards.**
+1. Can the offer bullets move below the term, fee and window, under their own heading ("Offers for new customers"), with the cashback condition kept inside that heading?
+2. Is a one-line statement "You do not need a Barclays current account to apply for this card" acceptable in the card block?
+3. The offers end 20 October 2026. Is the next promotion going into the same slot, and if so can it follow the new layout from day one?
+
 **Decision.** Open.
