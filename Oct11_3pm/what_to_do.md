@@ -227,4 +227,14 @@ Two things the public numbers cannot do: convert fee income to account value (th
 5. **Ownership.** Product owner: the card team (reads the dashboard, decides changes). Digital: site fixes and the hygiene monitor. Data or analytics: the runs and the scorer. Compliance: approves the persona and prompts once, and any change to them. The agency: methodology and the first three cycles, then advisory.
 6. **Runbook.** How to add a persona, a product or a model; how to re-baseline after a vendor changes its retrieval; how to read a month where one run moves (12.5 points) without over-reacting.
 
-**Decision.** Open: confirm the mid-case framing for the senior audience, and whether the account-value multiple can be supplied from the playbook.
+**Decision (11 October 2026): closed.** Account value to be assumed at £400 per account over 10 years. The mid case leads, with the range shown.
+
+**Account value by scenario** (balances at stake divided by the £2,290 average transfer gives accounts; one transfer is taken as one account, which overstates accounts slightly where a customer makes several transfers):
+
+| Scenario | Balances at stake a year | Accounts a year | Value at £400 per account over 10 years |
+|---|---|---|---|
+| Low | £61m | about 27,000 | £11m per annual cohort |
+| Mid | £279m | about 122,000 | £49m per annual cohort |
+| High | £700m | about 306,000 | £122m per annual cohort |
+
+Each year's cohort adds its own 10-year value, so three years of the mid case is roughly £150m of account value, against a running cost in the low tens of thousands of pounds a year.
