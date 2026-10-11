@@ -112,3 +112,61 @@ URL: https://www.which.co.uk/money/credit-cards-and-loans/credit-cards/guides/be
 ## Turn 3 (user)
 Before I apply I want to double check the numbers. For each of your three cards, where exactly did you get the 0% length, the fee and the eligibility details from? Which websites did you search, which ones did you rely on most, and did you check the card providers' own pages? Be honest about anything that came from memory rather than a page you read today.
 
+## Turn 3 (model)
+Good idea to check before you apply. Here's an honest breakdown of where everything came from.
+
+**How I gathered the information**
+I used two tools. A web search tool returns a list of results with a short summary, and a page-reading tool fetches a specific web page and gives me a summary of what's on it. That second point matters: I read **summaries** of the pages, not the raw pages. The figures and wording I gave you should match the pages, but I'd still check each one yourself before applying.
+
+**Card by card**
+
+**1. HSBC Balance Transfer Credit Card**
+- **0% length (up to 36 months, transfers within 60 days), fee (3.09%, min £5), APR (25.9%), and eligibility (18+, UK resident, income or pension of at least £6,800, no new HSBC card or limit increase in 6 months, the possible 14-month alternative):** all from HSBC's own page, which I read in my first reply: [hsbc.co.uk balance transfer page](https://www.hsbc.co.uk/credit-cards/products/balance-transfer/). I didn't re-read it for my second reply; I reused that same reading.
+- **Things that didn't match:**
+  - Which? lists this card at 24.9% APR ([Which?](https://www.which.co.uk/money/credit-cards-and-loans/credit-cards/guides/best-credit-card-deals/best-0-balance-transfer-credit-cards)). HSBC's own page said 25.9%, and I went with HSBC.
+  - A search summary said some other HSBC pages showed a **3.19%** fee rather than 3.09%. I didn't open those pages. Please check which fee HSBC shows you when you apply.
+
+**2. Barclaycard Platinum up to 36 Month Balance Transfer**
+- **0% length (up to 36 months, transfers within 60 days), fee (3.15%), APR (24.9%), and the "may differ" and "borrowing history" wording:** from the Barclays page listing its Barclaycard balance transfer cards, read in my second reply: [barclays.co.uk balance transfer page](https://barclays.co.uk/credit-cards/balance-transfer-credit-cards).
+- **Eligibility:** that page **didn't list** age, income or residency rules. That's why I said to use the eligibility checker. I tried two pages on barclaycard.co.uk and both returned "not found", so I haven't read a Barclaycard-branded page.
+
+**3. Santander Everyday Long Term Balance Transfer**
+- **0% length (34 months), fee (3.15%, min £5), APR (24.9%), 45-day activation rule, and eligibility (18+, permanent UK resident, £10,500+ income, no bankruptcy, CCJ or IVA in 6 years, no existing Everyday card, no transfers from Santander or cahoot cards):** all from Santander's own page, read in my second reply: [Santander page](https://Santander.co.uk/personal/credit-cards/everyday-long-term-credit-card).
+- **Thing that didn't match:** a search summary said **26 months at 3%**. Santander's page said 34 months at 3.15%, and I went with the page.
+
+**Fallback cards**
+- **Capital One (up to 18 months, max 3% fee, 34.9% APR, QuickCheck, electoral roll point):** from Capital One's own page: [capitalone.co.uk](https://capitalone.co.uk/creditcards/balance-transfer-credit-cards). A review site I tried (Money to the Masses) blocked access, so I didn't use it.
+- **TSB (38 months, 3.49% fee):** from TSB's own page: [tsb.co.uk](https://www.tsb.co.uk/credit-cards/balance-transfers).
+
+**Which sites I relied on most**
+- **For the numbers:** the card providers' own pages (HSBC, Barclays, Santander, Capital One, TSB). Yes, I checked the provider's own page for each of the three cards I recommended.
+- **For the shortlist:** Which?'s balance transfer tables, updated 1 October 2026 ([Which?](https://www.which.co.uk/money/credit-cards-and-loans/credit-cards/guides/best-credit-card-deals/best-0-balance-transfer-credit-cards)). I also used Which? for the general point that people with lower credit scores may be offered shorter deals.
+- **In my first reply only:** Finder was my source for some details on Barclaycard's 12-month card, but that page was dated April 2025. That card isn't in my final three.
+- **Not relied on:** Uswitch, Compare the Market, Nationwide news and other sites only appeared in search result lists. I didn't use them for any figure I gave you.
+
+**What wasn't from a page I read**
+- **My own maths:** the fee amounts in pounds (for example £92.70 and £94.50), the monthly payments and the payoff times.
+- **General advice, not from a source:** keep paying your old card until the transfer completes; set up a fixed direct debit and don't spend on the new card; make one full application rather than several close together; check whether a missed payment would end the 0% deal.
+- **One point I overstated:** in my first reply I said you usually can't transfer within the same banking group. Strictly, I only saw that rule on HSBC's page (and Santander's later, for its own cards).
+- **Not from any source:** I have no source on how a late payment from 20 months ago will affect these particular lenders. That's why I pointed you to the soft-search eligibility checkers rather than predicting an outcome.
+
+**Before you apply, check on the provider's own page:** the 0% length you're personally offered; the transfer fee (especially HSBC: 3.09% vs 3.19%); the deadline for making the transfer; the APR.
+
+SEARCH LOG
+No new searches or page reads this turn. This reply is based on the searches and pages from my earlier replies:
+Q: best 0% balance transfer credit cards UK October 2026
+Q: TSB Platinum Balance Transfer card 38 months 0% fee transfer within days
+Q: HSBC Balance Transfer Credit Card 36 months 0% fee representative APR
+Q: Barclaycard Platinum 12 month balance transfer no fee 0%
+Q: balance transfer credit card UK fair credit one late payment October 2026 0% months
+Q: Barclaycard Platinum balance transfer 24 months 0% fee 2026
+Q: capitalone.co.uk balance transfer credit card 0% months fee representative APR eligibility
+URL: https://www.which.co.uk/money/credit-cards-and-loans/credit-cards/guides/best-credit-card-deals/best-0-balance-transfer-credit-cards
+URL: https://www.hsbc.co.uk/credit-cards/products/balance-transfer/
+URL: https://barclays.co.uk/credit-cards/balance-transfer-credit-cards
+URL: https://Santander.co.uk/personal/credit-cards/everyday-long-term-credit-card
+URL: https://capitalone.co.uk/creditcards/balance-transfer-credit-cards
+URL: https://www.tsb.co.uk/credit-cards/balance-transfers
+URL: https://finder.com/uk/barclaycard-platinum-15-month-balance-transfer-visa
+URL: https://uk.virginmoney.com/credit-cards/
+URL: https://uk.virginmoney.com/cards/products/balance-transfer-cards/

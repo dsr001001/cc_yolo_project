@@ -114,3 +114,44 @@ URL: https://lovemoney.com/news/amp/30832/barclaycard-launches-fee-free-0-balanc
 ## Turn 3 (user)
 No, it isn't Nationwide. Before I apply I want to double check the numbers. For each of your three cards, where exactly did you get the 0% length, the fee and the eligibility details from? Which websites did you search, which ones did you rely on most, and did you check the card providers' own pages? Be honest about anything that came from memory rather than a page you read today.
 
+## Turn 3 (model)
+Short version: my first two replies were based on search-result summaries, not on pages I had opened. I've now opened some pages, and the check changes my ranking. Nothing came from memory. Everything came from search summaries or pages fetched this turn, but several things I told you were wrong or unverified, listed below.
+
+**What I did before this reply**
+- I ran 6 web searches across the first two turns, covering UK balance transfer cards generally, MoneySavingExpert, TSB, a "fee under 3%" search, a Nationwide and 30-month search, and Barclaycard. The searches returned summaries of pages (Which?, Finder, Compare the Market, Money to the Masses, MoneySuperMarket, MoneySavingExpert, TSB, Nationwide and others). I did not open any of those pages at the time.
+- The sites I leaned on most were Which? ([balance transfer table](https://www.which.co.uk/money/credit-cards/balance-transfer-credit-cards)) and Money to the Masses ([best deals](https://moneytothemasses.com/using-credit/credit-cards/best-0-balance-transfer-credit-card-deals)).
+- Before this turn I had not checked any provider's own page for HSBC, Virgin Money, Barclaycard or Lloyds.
+
+**What I checked just now, and what it showed**
+- **Which? table**, fetched today and stated as correct as of 1 October 2026 ([Which?](https://www.which.co.uk/money/credit-cards/balance-transfer-credit-cards)): HSBC 36 months at 0%, fee 3.09%, 24.9% representative APR. Virgin Money 36 Month: 36 months at 0%, fee 3.1%, 24.9% representative APR. Barclaycard Platinum 12 Month: 12 months at 0% with a 0% fee. Lloyds is not in that table at all. It gives no card-specific eligibility rules. It says the length of offer usually depends on your circumstances and a lower credit rating may mean a shorter period.
+- **HSBC's own page**, fetched today ([HSBC](https://www.hsbc.co.uk/credit-cards/products/balance-transfer/)): "up to 36 months" on transfers made within 60 days of opening the account. Your offer may instead be a shorter 14-month period, and the length depends on your circumstances. Fee 3.09% (minimum £5). Representative APR 25.9%, which differs from the 24.9% Which? shows. Eligibility: over 18, UK resident, taxable income of £6,800 or more, no HSBC Basic Bank Account, no new HSBC credit card or limit increase in the past 6 months, and no transfers from HSBC Group cards. Approval is subject to status and affordability. Your £3,000 is on a small online lender's card, so the group-card exclusion shouldn't affect you.
+- **Barclaycard's own page:** the address I tried returned a 404, so I could not read it.
+- **Virgin Money's own page:** the addresses I tried returned redirects and then a 404, so I could not read it.
+- **Lloyds' own page:** it showed a "temporarily unavailable" error, so I could not read it.
+
+**Corrections to what I told you**
+- **Lloyds (my third pick):** my 23 months and 2.99% came only from a search summary of a Money to the Masses page, and Which? doesn't list it. Treat it as unverified.
+- **Barclaycard (my second pick):** the sources conflict badly. Which? (1 October 2026) shows a 12-month, no-fee card. Money to the Masses showed 36 months at 3.45% on one version and up to 35 months at 2.49% on another. I could not reach Barclaycard's own page, so I can't say which is right. Don't rely on it for a 36-month plan.
+- **Lloyds ongoing rate:** I said these cards typically revert to around 24.9%. I had no source for Lloyds specifically, and HSBC's own page shows 25.9%. That was an assumption.
+- **Eligibility for Virgin Money and Barclaycard:** I found nothing, so my line that "nothing says you need an existing account" only means I didn't find a rule, not that none exists. My comments that you would likely do well with an excellent record and could do better than Vanquis are my judgement, not sourced facts.
+- **Older MoneySavingExpert link:** it is a 2017 page, and I used it only for the general point about checking eligibility first.
+
+**Revised ranking for you, based on what I could verify**
+1. **HSBC Balance Transfer:** the best verified option. Two independent sources agree on 36 months and 3.09% ([HSBC](https://www.hsbc.co.uk/credit-cards/products/balance-transfer/), [Which?](https://www.which.co.uk/money/credit-cards/balance-transfer-credit-cards)). On £3,000 that fee is about £93 (my arithmetic). The catch is that the 36 months is "up to" and you could be offered only 14, so run the soft check before applying.
+2. **Virgin Money 36 Month:** Which? shows 36 months at 3.1% (about £93), but I could not read Virgin's own page, so confirm eligibility and terms there.
+3. **Barclaycard Platinum or Lloyds:** both are unconfirmed. I'd only take either after reading the provider's current page, and the Barclaycard 12-month no-fee card would only work if you can clear £3,000 in a year (about £250 a month).
+
+Before applying, check each provider's own page, and use a soft-search eligibility check where one is offered.
+
+SEARCH LOG
+Q: (no new web searches this turn; I ran WebFetch page fetches only)
+URL: https://www.which.co.uk/money/credit-cards/balance-transfer-credit-cards
+URL: https://www.hsbc.co.uk/credit-cards/products/balance-transfer/
+URL: https://www.barclaycard.co.uk/personal/credit-cards/balance-transfer (404, not read)
+URL: https://www.virginmoney.com/credit-cards/balance-transfer-credit-card/ (redirected)
+URL: https://uk.virginmoney.com/credit-cards/balance-transfer-credit-card/ (404, not read)
+URL: https://www.lloydsbank.com/credit-cards/balance-transfer-credit-cards.html (error page, not read)
+URL: https://moneytothemasses.com/using-credit/credit-cards/best-0-balance-transfer-credit-card-deals (earlier search summary only)
+URL: https://moneytothemasses.com/using-credit/credit-cards/best-0-balance-transfer-credit-card-deals/amp (earlier search summary only)
+URL: https://moneytothemasses.com/using-credit/credit-cards/best-credit-cards-in-the-uk/amp (earlier search summary only)
+URL: https://www.moneysavingexpert.com/tips/2017/01/04/ (earlier search summary only)

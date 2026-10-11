@@ -82,3 +82,35 @@ URL: https://getsmartsaver.co.uk/best-0-balance-transfer-cards-uk-2026/
 ## Turn 3 (user)
 Before I apply I want to double check the numbers. For each of your three cards, where exactly did you get the 0% length, the fee and the eligibility details from? Which websites did you search, which ones did you rely on most, and did you check the card providers' own pages? Be honest about anything that came from memory rather than a page you read today.
 
+## Turn 3 (model)
+I did not open any full web pages. Every figure I gave came from search result snippets and summaries. I ran no new searches this turn. I have not checked any provider's own page except the Vanquis one, and even that was only a snippet.
+
+**HSBC (ranked 1st)**
+- 36 months at 0%, 3.09% fee, transfers within 60 days, new customers only: [Compare the Market](https://www.comparethemarket.com/credit-cards/balance-transfer/) snippet.
+- The 3.19% fee and "guaranteed" 36 months come from [Good Money Guide](https://goodmoneyguide.com/banking/credit-cards/balance-transfer-credit-cards/) snippet. That is a blog, and it conflicts with the 3.09% figure.
+- Eligibility for your Fair band: no source I read covers this for HSBC. The suitability point is my inference.
+
+**NatWest (ranked 2nd)**
+- Up to 36 months, 3.10% fee, no annual fee, and a 16 to 36 month range depending on assessment: [ClearScore](https://www.clearscore.com/learn/credit-cards/natwest-loosens-criteria-market-leading-balance-transfer-card-heres-how-it-works) snippet.
+- The 3.10% and 36 months also appeared in a MoneyComms list snippet, but I could not confirm that list's page.
+- Transfers within 3 months: [Compare the Market](https://www.comparethemarket.com/credit-cards/balance-transfer/) snippet.
+
+**Barclaycard (ranked 3rd)**
+- 36 months at 0%, 3.15% fee: a [MoneyComms](https://moneycomms.co.uk/could-a-0-balance-transfer-credit-card-work-for-you/) roundup snippet dated 29 May 2026. I have inferred that the figures are on that page. I have not seen it there.
+- The 24.9% APR afterwards came from a guide table I could not link. Treat it as unverified.
+
+**Other figures**
+- Fees generally 1% to 3.5%: [GetSmartSaver](https://getsmartsaver.co.uk/best-0-balance-transfer-cards-uk-2026/) snippet.
+- Checker results do not affect your credit file: [Which?](https://www.which.co.uk/news/article/8-things-you-need-to-know-about-balance-transfer-credit-cards-aRirT7Q1jdKn) snippet.
+- Rate of roughly 20% APR after a missed deadline, and the MSE eligibility calculator: [MoneySavingExpert](https://moneysavingexpert.com/credit-cards/balance-transfer-credit-cards/) snippet and summary only.
+- Vanquis: its [official page](https://www.vanquis.com/credit-cards/low-apr-balance-transfer-card) snippet says 9.9% or 12.9%, not 0%. That contradicts the Which? snippet I relied on earlier.
+- TSB: 38 months, 3.49%, 24.9% from [Which?](https://www.which.co.uk/money/credit-cards-and-loans/credit-cards/guides/best-credit-card-deals/best-0-balance-transfer-credit-cards) snippet.
+
+**Which sources I relied on most:** Which? and Compare the Market for the core numbers, ClearScore for NatWest's range, and the Vanquis official page for its terms. I did not rely on any single source for the eligibility points, and I found no source for Fair-band approval odds on any of these cards.
+
+**Memory versus sources:** The monthly payment figures and total fees are my arithmetic on the quoted fees. The advice to avoid spending on the card and to pay above the minimum is general knowledge, not from a source I read.
+
+**Before applying:** check each lender's own page for the fee, the 0% length, and the transfer window, and run its eligibility checker. Confirm the HSBC fee (3.09% or 3.19%) and the Barclaycard APR in particular.
+
+SEARCH LOG
+No new searches this turn. Sources are those listed above, all from earlier searches.

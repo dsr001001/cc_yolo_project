@@ -108,3 +108,52 @@ URL: https://www.moneysupermarket.com/news/take-control-of-your-finances-with-a-
 ## Turn 3 (user)
 Before I apply I want to double check the numbers. For each of your three cards, where exactly did you get the 0% length, the fee and the eligibility details from? Which websites did you search, which ones did you rely on most, and did you check the card providers' own pages? Be honest about anything that came from memory rather than a page you read today.
 
+## Turn 3 (model)
+Short answer: I did not open any card provider's own page, so please treat my figures as unverified until you've checked them there. I ran no new searches for this reply.
+
+**How I got the information**
+- I ran five web searches across the conversation. They returned page titles, URLs and short summaries of what each page says.
+- I never opened or read a full page, so I never saw a page's small print, date or eligibility section.
+- Everything below comes from those summaries, not from pages I read in full.
+- None of the figures came from a provider's own website, such as HSBC, Lloyds or Tesco, except the Tesco page, which I saw only as a summary.
+
+**Card by card**
+
+*Tesco Bank, 24 months at 0% and a 2.75% fee*
+- Both figures come from the summary of [Tesco's own page](https://www.tescobank.com/creditcards/lowfee/index.html). That makes it the closest I got to a provider source, but I didn't open it.
+- The page isn't dated and I don't know whether the offer is current.
+- Be careful with my comment that Tesco suits people with poor credit. That came from [Finder](https://www.finder.com/uk/credit-cards/best-credit-cards), and the summary said it was not a balance transfer card. It was probably a different Tesco product, so don't treat it as evidence for this card.
+- My comment that you don't need an existing relationship with Tesco was an assumption. No source I read said so.
+
+*Lloyds Bank Platinum, about 23 months at 0% and a 2.99% fee*
+- The 23 months and 2.99% come from a [ClearScore comparison](https://www.clearscore.com/learn/credit-cards/best-no-interest-purchase-credit-cards) summary.
+- The "5% after 90 days" detail comes from a [Money to the Masses](https://moneytothemasses.com/using-credit/credit-cards/best-0-balance-transfer-credit-card-deals) summary. It may describe an older offer.
+- The "33 months at 2.49%" and "up to 49% may get a shorter deal" claims come from an [earlier ClearScore guide](https://www.clearscore.com/learn/credit-cards/lloyds-balance-transfer-credit-card), also from its summary.
+- These sources conflict with each other, which is why I flagged them. I would not rely on any Lloyds figure until you've seen Lloyds' own page.
+
+*HSBC Balance Transfer Visa, 36 months at 0% and a 3.09% fee*
+- The 3.09% fee and 36 months come from a [Which? table](https://www.which.co.uk/money/credit-cards/balance-transfer-credit-cards) summary, which I relied on most.
+- The 3.19% fee and 60-day window come from a [MoneySuperMarket](https://www.moneysupermarket.com/news/take-control-of-your-finances-with-a-balance-transfer-credit-card) summary, and those listings had end dates in early 2026.
+- Which? tables were dated 2 September and 30 July 2026 in different versions.
+
+**Eligibility**
+- I found no real eligibility rules for any of the three cards.
+- The only eligibility-related sources were Which? ("credit available subject to status"), a [Finder](https://www.finder.com/uk/credit-cards/best-credit-cards) note that TSB uses a soft search, and an [Ulster Bank](https://www.ulsterbank.co.uk/credit-cards/longer-balance-transfer.html) note about its own approval check. Neither of the last two is about Tesco, Lloyds or HSBC.
+- I don't know that Tesco, Lloyds or HSBC have soft-search eligibility checkers, though most major lenders do.
+- I also don't know how your Fair rating and the missed payment will affect approval or limit.
+
+**Things that came from my general knowledge, not a page**
+- That Vanquis cards are generally aimed at people with weaker credit (I flagged this at the time).
+- That several hard searches in a short period can lower your score.
+- That you should keep paying the old card's minimum until the transfer completes.
+- My monthly-payment and fee calculations are my own arithmetic from the figures above.
+
+**What I'd do before applying**
+1. Open each provider's own page (Tesco, Lloyds, HSBC) and confirm the 0% length, the transfer fee, the deadline for transferring, and the representative APR.
+2. Use a soft-search eligibility checker where one is offered.
+3. If the offer shown after approval is shorter or has a higher fee than advertised, you can decline it.
+
+I can fetch the provider pages now and replace these summary-based figures with what the pages say, if you'd like.
+
+SEARCH LOG
+No new searches were run for this reply.

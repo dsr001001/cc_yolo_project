@@ -87,3 +87,48 @@ URL: https://www.moneysupermarket.com/credit-cards/balance-transfer/
 ## Turn 3 (user)
 Before I apply I want to double check the numbers. For each of your three cards, where exactly did you get the 0% length, the fee and the eligibility details from? Which websites did you search, which ones did you rely on most, and did you check the card providers' own pages? Be honest about anything that came from memory rather than a page you read today.
 
+## Turn 3 (model)
+Fair question, and I'll be straight with you, including about the limits of what I did.
+
+**How I researched this**
+I ran 12 web searches across the two replies. Importantly, I did not open and read any page in full. The search tool returned excerpts and summaries from each page, and that's what I worked from. So when I say "Barclaycard's page lists X", I mean an excerpt of that page surfaced in a search result today, not that I read the whole page or its terms and conditions. That's a real limitation and it's the main reason you should click through before applying.
+
+The sites I relied on most: MoneySavingExpert (their [balance transfer guide](https://www.moneysavingexpert.com/credit-cards/balance-transfer-credit-cards/) and their [24 Feb 2026 roundup](https://www.moneysavingexpert.com/tips/2026/02/24/)), [Which?](https://www.which.co.uk/money/credit-cards-and-loans/credit-cards/best-credit-card-deals/best-0-balance-transfer-credit-cards-atMFj4R64A0D), and provider pages from Barclaycard, HSBC, TSB and Virgin Money. I also saw excerpts from MoneySupermarket, Forbes Advisor UK, Finder and a couple of lower-quality aggregator sites, which I used only as cross-checks.
+
+**Card 1: Barclaycard Platinum up to 22 months, 1.49% fee**
+- 0% length, fee, 24.9% APR, 60-day transfer window: all from an excerpt of [Barclaycard's own product page](https://www.barclaycard.co.uk/personal/credit-cards/mid-bt-platinum). Caveat: the search tool flagged Barclaycard's card listings as about six months old, so this offer may have changed. Please confirm on the page.
+- "0% runs from account opening, not transfer date": from an excerpt of [Barclaycard's promotional rates page](https://www.barclaycard.co.uk/personal/credit-cards/promotional-rates).
+- "Up to" means Fair applicants may get a shorter term: this is a general point I took from [MSE's roundup](https://www.moneysavingexpert.com/tips/2026/02/24/), which explained definite vs "up to" deals; I did not see a Barclaycard page saying that about this specific card.
+- The [eligibility checker link](https://www.barclaycard.co.uk/personal/credit-cards/eligibility-checker) came up in search; that it's a soft search with no mark on your file is from my general knowledge, not something I read today.
+
+**Card 2: HSBC Balance Transfer Credit Card, up to 36 months, 3.09% fee**
+- 36 months, 3.09% fee (minimum £5), 60-day window, 25.9% representative APR, and the warning that accepted applicants may be offered a backup of 0% for 14 months at 29.9%: all from excerpts of [HSBC's product page](https://www.hsbc.co.uk/credit-cards/products/balance-transfer/).
+- One inconsistency I should flag: [MSE's guide](https://www.moneysavingexpert.com/credit-cards/balance-transfer-credit-cards/) gave the after-deal APR as 24.9%, and an HSBC summary-box PDF showed a 3.19% fee and 24.9% APR, which looks like an older version. I went with HSBC's live page but you should check which is current.
+
+**Card 3: Barclaycard Platinum 36 months, 3.15% fee ("definite")**
+- "Definite 36 months, 3.15% fee": from [MSE's 24 Feb 2026 roundup](https://www.moneysavingexpert.com/tips/2026/02/24/). That's eight months old, so the "definite" status and the fee could have changed since.
+- 60-day window and 24.9% APR: from an excerpt of [Barclaycard's balance transfer page](https://www.barclaycard.co.uk/personal/credit-cards/balance-transfer-credit-cards).
+- The Virgin Money alternative: 36 months, 3.1% fee, 24.9% APR from the [Which? table](https://www.which.co.uk/money/credit-cards-and-loans/credit-cards/best-credit-card-deals/best-0-balance-transfer-credit-cards-atMFj4R64A0D) (one excerpt dated it 1 October 2026); "up to 36 months" from an excerpt of [Virgin Money's page](https://uk.virginmoney.com/cards/products/balance-transfer-cards/). A less reputable site showed Virgin's fee as 3.4%, which I discounted but mention for completeness.
+
+**Things that came from me, not from a page read today**
+- All the arithmetic: fees on £3,000 (£45, £93, £94.50), monthly amounts, months to clear, and "roughly £60 a month in interest" (24.9% of £3,000 divided by 12 is about £62).
+- "You can't transfer between cards from the same provider." I attributed this to MSE's guide in my first reply; that was general knowledge that I was too quick to pin on a page. It's a standard rule but check it on MSE or the provider's site.
+- "Apply for one card only; multiple applications leave hard searches" and "being on the electoral roll helps": general knowledge, not sourced today.
+- "Fair applicants may be offered a higher fee or shorter term": this one was in a [Forbes Advisor UK](https://www.forbes.com/advisor/uk/credit-cards/balance-transfer/) excerpt, so it is sourced, but it's a general statement rather than about these specific cards.
+
+**What I'd suggest before applying**
+Open the three provider pages above and check the 0% length, fee, APR and transfer deadline against what I've written, then use MSE's eligibility calculator, since it's the one tool that will tell you what term you personally are likely to get. If any number on the live page differs from mine, trust the page.
+
+SEARCH LOG
+No new searches this turn. All sources below were found in the earlier two turns.
+URL: https://www.moneysavingexpert.com/credit-cards/balance-transfer-credit-cards/
+URL: https://www.moneysavingexpert.com/tips/2026/02/24/
+URL: https://www.which.co.uk/money/credit-cards-and-loans/credit-cards/best-credit-card-deals/best-0-balance-transfer-credit-cards-atMFj4R64A0D
+URL: https://www.barclaycard.co.uk/personal/credit-cards/mid-bt-platinum
+URL: https://www.barclaycard.co.uk/personal/credit-cards/promotional-rates
+URL: https://www.barclaycard.co.uk/personal/credit-cards/eligibility-checker
+URL: https://www.barclaycard.co.uk/personal/credit-cards/balance-transfer-credit-cards
+URL: https://www.hsbc.co.uk/credit-cards/products/balance-transfer/
+URL: https://www.hsbc.co.uk/content/dam/hsbc/gb/pdf/credit-cards/summary-box-balance-transfer.pdf
+URL: https://uk.virginmoney.com/cards/products/balance-transfer-cards/
+URL: https://www.forbes.com/advisor/uk/credit-cards/balance-transfer/

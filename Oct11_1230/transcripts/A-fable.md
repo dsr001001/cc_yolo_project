@@ -80,3 +80,37 @@ URL: https://www.capitalone.co.uk/
 ## Turn 3 (user)
 Before I apply I want to double check the numbers. For each of your three cards, where exactly did you get the 0% length, the fee and the eligibility details from? Which websites did you search, which ones did you rely on most, and did you check the card providers' own pages? Be honest about anything that came from memory rather than a page you read today.
 
+## Turn 3 (model)
+Fair question, and worth asking before you apply. No new searches this turn; here's exactly where each figure came from, including the weak spots.
+
+**How I searched**
+- I ran five web searches across the two previous replies (listed in those search logs) and then opened pages directly. The pages I actually read today were: MoneySavingExpert's balance transfer guide (opened twice, last updated 7 October 2026), Which?'s best 0% balance transfer page (dated 1 October 2026), Barclaycard's balance transfer page, HSBC's balance transfer product page, Virgin Money's general credit cards page, and Capital One's homepage.
+- One caveat on MSE: the page is very long and my reader only covered roughly the first two-thirds of it. The three cards you're choosing between were all in the part I read, but I didn't see the final third.
+- Two sources I cited, Comparethemarket and Finder, I did not open myself. Their figures came from the search engine's summaries of those pages, so treat them as second-hand and click through to check.
+- Nothing about any card's terms came from memory. Everything numeric is from a page or search result today. The only things from my own head are general advice (apply for one card, pay by direct debit, don't spend on it) and the arithmetic (fees on £3,000, months to clear, the roughly £60 a month you're paying now at 24.9%).
+
+**Card 1: Virgin Money 36-month, 3.1% fee**
+- 0% length (definite 36 months), 3.1% fee, 24.9% APR after: MSE's guide, which I read directly. Checked twice.
+- 60-day transfer window and "new customers only": from the search summary of Comparethemarket, not read first-hand.
+- Can't transfer from Virgin or Nationwide cards, and 27.9% representative APR shown for the balance transfer range: Virgin Money's general credit cards page, read directly.
+- Weak spot: I tried Virgin Money's dedicated balance transfer pages twice and both URLs returned 404, so I never saw the card's own summary box. That's why the 24.9% (MSE) versus 27.9% (Virgin's own page) discrepancy is unresolved. This is the card I'd most want you to verify on Virgin's site before applying.
+- Eligibility beyond "UK resident, 18+" (Virgin's page): I have nothing. No income figure.
+
+**Card 2: Virgin Money 24-month, 1.95% fee**
+- Definite 24 months, 1.95%, 24.9% after: MSE's guide, read directly.
+- Corroboration at 24 months, 1.95%, 24.9%: Finder, via search summary only, and that page was undated.
+- Same gap as card 1: no provider page read, no income criteria, and the same APR discrepancy applies.
+
+**Card 3: HSBC 36-month, 3.09% fee**
+- This is the one with the firmest provider check. HSBC's own page, read directly, gave: up to 36 months, 3.09% fee (minimum £5), 25.9% representative APR, transfer within 60 days, over 18, UK resident, income of £6,800 or more, no HSBC Basic Bank Account, no new HSBC card or limit increase in the past six months, and no transfers from HSBC, first direct or M&S.
+- MSE's guide (read directly) is what said "definite 36 months" and 24.9% after. I flagged the conflict rather than picking one; HSBC's page should win.
+
+**Cards I mentioned but dropped**
+- Capital One "up to 36 months at 2.9%, 28.9% after": MSE only. Capital One's homepage, read directly, showed only an 18-month card at 3% and 34.9%, and the direct card URL 404'd. A separate search found no third-party confirmation either.
+- Tesco 35 months at 3.15%: MSE only, not checked with Tesco.
+- Barclaycard figures in my first reply: Barclaycard's own page, read directly, plus MSE and Which?.
+
+**What I'd do before applying:** open Virgin Money's balance transfer card page yourself (search "Virgin Money balance transfer credit card" rather than using my links, since theirs have moved) and confirm the 0% length, fee, go-to APR and the 60-day rule in the summary box. Then run MSE's eligibility calculator, which is also where you'll see if the terms it shows match.
+
+SEARCH LOG
+No new searches or page reads this turn. Sources referenced are those from the two previous search logs.

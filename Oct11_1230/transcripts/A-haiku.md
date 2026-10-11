@@ -70,3 +70,34 @@ To finish the ranking, could you tell me:
 ## Turn 3 (user)
 1b, no, I'd rather not open a Nationwide account just for this. 2a, yes. Before I apply I want to double check the numbers. For each of your three cards, where exactly did you get the 0% length, the fee and the eligibility details from? Which websites did you search, which ones did you rely on most, and did you check the card providers' own pages? Be honest about anything that came from memory rather than a page you read today.
 
+## Turn 3 (model)
+Short answer: my earlier figures came from search-result summaries, not from provider pages I had opened. I have now opened the HSBC and Nationwide pages. Two of my earlier statements were wrong, and I have dropped Nationwide from the ranking because you don't want a Nationwide account.
+
+**What I searched and relied on**
+I ran 8 web searches across this conversation: general balance transfer lists, MoneySavingExpert, Barclaycard, HSBC, and Nationwide. Most of my numbers came from search-result summaries of comparison sites, mainly [Kaeltripton](https://www.kaeltripton.com/compare/best-0-percent-credit-cards-uk/), [Money to the Masses](https://moneytothemasses.com/using-credit/credit-cards/best-0-balance-transfer-credit-card-deals) and [MoneySavingExpert](https://www.moneysavingexpert.com/cards/balance-transfer-credit-cards). Before this message I had not opened any provider page, so the provider-page claims were secondhand.
+
+**Checked today on the provider pages**
+- **HSBC** ([HSBC balance transfer page](https://www.hsbc.co.uk/credit-cards/compare.balance-transfer-credit-card.classic-credit-card.purchase-plus-credit-card/)): "0% for up to 36 months on balance transfers made within 60 days of account opening." Fee 3.09%, minimum £5. Representative APR 25.9% variable, not the 24.9% some comparison sites show. It is for new and existing customers, so you don't need an HSBC account. Note the word "up to": the length is not guaranteed at 36 months.
+- **Nationwide** ([balance transfer page](https://www.nationwide.co.uk/credit-cards/balance-transfer-credit-card) and [rates page](https://www.nationwide.co.uk/credit-cards/credit-card-rates-and-details)): 30 months at 0%, fee 2.99% (minimum £5) for transfers within 90 days of opening, 2.4% after that. Eligibility: 18 or over, UK resident, £5,000+ a year before tax, and a Nationwide current account, savings account or mortgage. You also can't have been declined for a credit card in the last 30 days, or held a Nationwide credit card in the last 12 months. The rates page doesn't say whether the 30 months runs from each transfer or from account opening. Nationwide is out for you now.
+
+**Not verified on provider pages**
+- **Virgin Money, 36 months at 3.1%**: from an MoneySavingExpert search summary. I have not opened Virgin's page. I also made an error in my last report: I cited Money to the Masses for Virgin's 3.1% fee. That page listed Barclaycard, not Virgin.
+- **Barclaycard, 14 months fee-free and up to 36 months at 3.15% or 3.45%**: from Kaeltripton and Money to the Masses summaries. I have not checked Barclaycard's own site.
+- **Nationwide's no-obligation eligibility check**: from a summary of a Nationwide member card page, which I did not open. Treat it as unverified.
+- **Transfers from a small online lender**: I said in my last report that this should not be an issue. That was a guess with no source. Please disregard it.
+
+**Numbers I calculated myself**
+Figures such as about £93 in fees and about £215 a month are my arithmetic from the percentages shown. I did not rely on memory for any of the rates or terms.
+
+**Updated ranking, provisional**
+1. **HSBC, up to 36 months at 0%, 3.09% fee (about £93 on £3,000).** Verified on HSBC's page. Transfers must be made within 60 days, and the APR after the deal is 25.9%.
+2. **Virgin Money, 36 months at 3.1% (about £93).** Unverified. Check Virgin's own page before relying on it.
+3. **Barclaycard, up to 36 months at 3.15% (about £95).** Unverified on Barclaycard's site, and slightly above your 3% ceiling. The fee-free 14-month card is a fallback only if you can pay about £215 a month, which is above your £200 limit.
+
+I can open Virgin's and Barclaycard's own pages now to check these before you apply. Say the word and I'll do it.
+
+SEARCH LOG
+No new web searches this turn.
+URL: https://www.hsbc.co.uk/credit-cards/compare.balance-transfer-credit-card.classic-credit-card.purchase-plus-credit-card/
+URL: https://www.nationwide.co.uk/credit-cards/balance-transfer-credit-card
+URL: https://www.nationwide.co.uk/credit-cards/credit-card-rates-and-details
