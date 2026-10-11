@@ -85,4 +85,28 @@ Three facts the models did not have:
 2. Is a one-line statement "You do not need a Barclays current account to apply for this card" acceptable in the card block?
 3. The offers end 20 October 2026. Is the next promotion going into the same slot, and if so can it follow the new layout from day one?
 
+**Decision (11 October 2026): closed.**
+1. Move the offer bullets below the term, fee and window under their own heading: recommended, for clarity.
+2. The line "You do not need a Barclays current account to apply for this card": taken.
+3. Whether the next promotion will follow the new layout: cannot say yet.
+Note: the same block, with the same two offer bullets, is also on barclays.co.uk (capture E3), so the layout change and the one-line statement should go on both sites.
+
+**Test after the change.** Rerun the protocol. Falsified as a fix if any run states or implies that the 36 month card needs a Barclays current account, or asks the user whether they bank with Barclays for a reason other than the cashback.
+
+## 5. Pages that do not resolve, and figures that disagree with each other
+
+**Problem found.**
+- Product-level URLs returned 404 in Sonnet A, Sonnet B, Opus B and Fable B (the 36 month card's own page, the 12 month card's page, and the bare /balance-transfer path, which is a 404 today: capture P7, P8). Opus B had Barclaycard joint first with HSBC and chose HSBC because it "couldn't open the card's own page to settle which is current" between the page's 3.15% and a third-party 3.45%. Opus A sourced every Barclaycard figure from barclaycard.co.uk/personal/search-balance-transfer, a search-results page.
+- barclays.co.uk shows alt text instead of card images on three of its four cards (capture E3b).
+- A "28.9% APR Representative (variable)" line sits in the benefits section of both the 22 month page and the barclays.co.uk listing, against the 24.9% headline (captures E6, E4).
+- The 22 month page's Terms and Conditions link resolves to a file named terms-and-conditions-barclaycard-core-2023.pdf.
+- No Barclaycard page carries a "correct as of" date. Which? prints one; every run asked for one at turn 5.
+- Third-party pages still indexed with old figures: Money to the Masses (May 2026) gives the long card a 3.45% fee, which Opus B, the Opus control and the Fable control carried; Finder's Virgin page is dated July 2025; Moneyfacts' chart FAQ dates its data to 3 July 2026 and Sonnet A picked from it; lovemoney's 2014 article still ranks for "Barclaycard balance transfer".
+
+**Questions put to the Head of Credit Cards.**
+1. Who owns the product-page URLs, and is there a reason the per-card pages linked from "See card details" are not stable, indexable pages?
+2. Is the 28.9% line in the benefits section a different product's rate (the entertainment-perks card) that has been templated into every page, and can it be removed or labelled?
+3. Can a "rates correct as of" date be added to the listing page and each product page?
+4. Does Barclaycard have a feed or contact for Money to the Masses, Finder and Moneyfacts, or is that comparison-site relationship managed elsewhere?
+
 **Decision.** Open.
