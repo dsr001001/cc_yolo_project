@@ -481,8 +481,176 @@ pres.addSection({ title: "Across the four models" });
   s.addText("Shaded rows are the three actions that would have changed the most runs and cost the least. 'Would have moved' counts runs in which the model gave that cause as a reason for ranking Barclaycard lower; it is the model's stated reason, not a controlled test. The test is a rerun of the same protocol after the change.", { x: M, y: 6.0, w: 12.3, h: 0.65, fontSize: 9.5, italic: true, color: C.text2, margin: 0, isTextBox: true, objectName: "note" });
   source(s, "The four 'what would change its answer' slides; Oct11_3pm/barclays_recommendation.md section 3.");
 }
+// ---------- What to do ----------
+pres.addSection({ title: "What to do" });
 {
-  const s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "Across the four models" });
+  const s = pres.addSlide({ masterName: "DARK", sectionTitle: "What to do" });
+  s.addText("What to do: decisions taken with the Head of Credit Cards", { placeholder: "title" });
+  s.addText("Eight items reviewed on 11 October 2026, each with the problem the study found, the challenge raised, what was checked, the decision and the test that would show it worked. Working record: Oct11_3pm/what_to_do.md.", { placeholder: "body" });
+}
+{
+  const s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "What to do" });
+  s.addText("The six product and page decisions", { placeholder: "title" });
+  const rows = [
+    ["#", "Problem the study found", "Decision", "Test after the change"],
+    ["1", "No eligibility line on Barclaycard's listing page; all 8 runs listed it as missing; HSBC's explicit criteria won two tie-breaks", "State the regulatory constraints in every card block (18 or over, UK resident, subject to status). Look to competitors for the rest. Surface what is already published but hidden for UI/UX: the soft-search line, the full-term statement, the 'what you'll need' list, the window-starts-at-opening statement", "No run lists eligibility or soft-search status as missing at turn 5 (baseline 8 of 8)"],
+    ["2", "The 22 month 1.49% card is absent from MSE, Which? and barclays.co.uk; 5 of 8 runs never saw it before the user named Barclaycard", "Likely a legacy channel policy. Show the card everywhere Barclaycard balance-transfer cards appear, including comparison-site feeds, with the same tier information as the 36 month card", "At least 4 of 8 runs see it from a guide (baseline 0 of 8)"],
+    ["3", "MSE labels HSBC 'definite' and Barclaycard 'up to 36, 32 or 18'; the most-cited reason for ranking HSBC first", "Do not publish full-term shares or downsell tiers. Replace 'up to N months' with a definite list of the options an accepted applicant can be offered, each with fee and rate, plus one line that the checker shows which applies", "No run calls a Barclaycard term 'up to' or 'not guaranteed' after reading the site (baseline 7 of 8)"],
+    ["4", "Offer bullets (Apple TV, £20 cashback) sit above the term and fee; Sonnet B excluded the 36 month card on the cashback's current-account condition", "Move offers below the terms under their own heading (recommended). Add 'You do not need a Barclays current account to apply for this card' (taken). Next promotion's layout: to be confirmed. Apply on barclays.co.uk too", "No run states or implies a current-account requirement (baseline 1 of 8)"],
+    ["5", "404s on product pages; alt text instead of images on barclays.co.uk; 28.9% APR line against the 24.9% headline; T&C file named 2023 (content June 2025); no dates; stale third-party snippets", "Correct the APR and fee mismatches; rates correct in real time at every listing, with a visible date. 404s and images: separate run, web team informed. T&C: dateless filename, edition line inside. Get Barclaycard into Moneyfacts; ask Finder to review its soft-search line", "No run quotes a Barclaycard rate or fee that differs from the site on the day (baseline 3 of 8); no 404 or search-page source (baseline 5 of 8)"],
+    ["6", "3.15% fee against HSBC's 3.09% and the customer's 'about 3%' decided tie-breaks in 4 runs", "No change. The fee is a conscious pricing decision under the pricing playbook, reviewed weekly by the commercial team. Pound-cost labelling not adopted. 24 and 21 month cards deferred", "Not a test item: reported as observed behaviour"],
+  ];
+  table(s, rows, M, 1.3, 12.3, [0.35, 3.3, 5.5, 3.15], { fontSize: 8.5, rowH: 0.78, boldFirstCol: true, name: "decisions table" });
+  source(s, "Oct11_3pm/what_to_do.md items 1 to 6; baselines from results.csv and the transcripts.");
+}
+{
+  const s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "What to do" });
+  s.addText("Item 1 evidence: what the regulator fixes, what competitors print, what Barclaycard already has but hides", { placeholder: "title" });
+  const rows = [
+    ["Issuer", "Minimum income stated", "Other criteria on the page"],
+    ["HSBC", "£6,800", "over 18, UK resident, no HSBC Basic Bank Account, group exclusions"],
+    ["Santander", "£10,500", "18+, permanent UK resident, no bankruptcy, CCJ or IVA in 6 years"],
+    ["NatWest", "£10,000", "UK resident, 18+, not bankrupt in 6 years"],
+    ["Nationwide", "£5,000", "18+, UK resident, Nationwide member"],
+    ["TSB, MBNA, Lloyds", "'a regular income'", "18+, UK resident, no recent CCJs, defaults, IVAs or bankruptcy"],
+    ["Virgin Money, Tesco Bank, Sainsbury's", "none", "UK residents aged 18 or over, subject to status"],
+    ["Barclaycard", "none", "nothing on the listing page; the 22 month page: checker for 18 or over, documents needed"],
+  ];
+  table(s, rows, M, 1.3, 7.3, [2.0, 1.5, 3.8], { fontSize: 9, rowH: 0.42, boldFirstCol: true, shade: (i) => i === 7, name: "elig table" });
+  heading(s, "Already on Barclaycard's pages, where a summariser drops it", 8.1, 1.3, 4.75, 12.5);
+  bullets(s, [
+    "'Won't affect your credit score': in a banner below all five cards. Two runs could not tell whether the checker is a soft search",
+    "'At least 7 out of 10 accepted customers received the longest promotional period': inside a collapsed accordion on the 22 month page only",
+    "'What you'll need' (address history, income, outgoings, bank details): 22 month page only",
+    "The 60 day window and the 0% period run from account opening: not stated on the listing page",
+  ], 8.1, 1.75, 4.75, 3.2, { fontSize: 10.5 });
+  img(s, "X_elig_santander.jpg", 8.1, 5.0, { w: 2.3, caption: "santander.co.uk eligibility block" });
+  img(s, "E1b_bc36_if_you_apply_box.jpg", 10.55, 5.0, { w: 2.3, caption: "barclaycard.co.uk, the only eligibility text" });
+  source(s, "Live pages, 11 October 2026 afternoon; deck/evidence X_elig_* and README. Falsified by opening the pages.");
+}
+{
+  const s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "What to do" });
+  s.addText("Item 3: from 'up to' to a definite list, so a model reads fixed terms", { placeholder: "title" });
+  card(s, M, 1.3, 5.9, 4.0, "before");
+  heading(s, "What a model reads today", M + 0.2, 1.4, 5.5, 13);
+  bullets(s, [
+    "Barclaycard: '0% interest on balance transfers for up to 36 months'; 'the balance transfer period and interest rates may differ from those shown'",
+    "MSE: 'If pre-approved you'll get the full 36 months at 0%. If not, you may get 36, 32 or 18 months and you'll only find out which after applying'",
+    "Result: Opus A, Opus B, Fable A and Fable B ranked HSBC above Barclaycard on the label; Fable B called the 18 month floor 'the worst value on the whole list'",
+  ], M + 0.2, 1.85, 5.5, 3.3, { fontSize: 10.5 });
+  card(s, 6.9, 1.3, 5.95, 4.0, "after");
+  heading(s, "What the decision puts in its place (illustrative wording)", 7.1, 1.4, 5.6, 13);
+  s.addText([
+    { text: "Depending on our assessment, accepted applicants are offered one of:", options: { breakLine: true, paraSpaceAfter: 4 } },
+    { text: "•  36 months at 0% on balance transfers, 3.15% fee, 24.9% APR representative (variable)", options: { breakLine: true } },
+    { text: "•  32 months at 0% on balance transfers, 3.15% fee, 24.9% APR representative (variable)", options: { breakLine: true } },
+    { text: "•  18 months at 0% on balance transfers, 3.15% fee, 24.9% APR representative (variable)", options: { breakLine: true, paraSpaceAfter: 4 } },
+    { text: "Our eligibility checker shows which option you would be offered before you apply, without affecting your credit score.", options: { italic: true } },
+  ], { x: 7.1, y: 1.85, w: 5.6, h: 3.3, fontSize: 10.5, color: C.text1, margin: 0, valign: "top", isTextBox: true, objectName: "after text" });
+  bullets(s, [
+    [{ text: "Why not publish the share who get the full term: ", options: { bold: true } }, { text: "exact downsell durations are hard to maintain and the figure could scare applicants away. The list carries the same information as options, not odds." }],
+    [{ text: "What it does and does not earn: ", options: { bold: true } }, { text: "a model quotes fixed terms and the checker result maps to one of them. MSE's 'definite' label still goes only to cards where every accepted applicant gets the full term; ask MSE to show the list rather than '36, 32 or 18'." }],
+    [{ text: "Apply the same format ", options: { bold: true } }, { text: "to the 22 month card (22 or 11) and the 12 month card (12 or 6). The options shown must track what the decision engine can offer." }],
+  ], M, 5.45, 12.3, 1.2, { fontSize: 10 });
+  source(s, "what_to_do.md item 3; MSE guide 7 October 2026 (E9); transcripts A-opus turn 3, B-fable turn 3.");
+}
+{
+  const s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "What to do" });
+  s.addText("Item 5 checks: dates, the terms file, and the three third-party sites", { placeholder: "title" });
+  const cols = [
+    ["Do other providers print a 'correct as of' date?", ["No issuer does, except Santander: 'correct as at 26 February 2025', twenty months old", "Every comparison site does: MSE 7 October, Which? 1 October, Finder 7 October, Money to the Masses 5 October 2026", "So the date is a comparison-site convention the models have learned to expect. Real-time correctness is the decision; a visible date that moves with the rates costs nothing on top"]],
+    ["The terms file named core-2023.pdf", ["The generic 30-page core credit card agreement; no APR, no term, no transfer fee figure ('depends on' the promotion), so it cannot settle a rate question", "PDF created 11 June 2025, modified 19 June 2025", "The only edition marker is a footer code on the last page: 'BUK000333047 TAC CORE 06/25'", "Decision: dateless filename, plain edition line near the top"]],
+    ["Why Money to the Masses, Finder and Moneyfacts matter", ["They are what the models read when they miss MSE or a provider page: Sonnet never found MSE; Opus B never opened it", "Money to the Masses today: 3.15%, published 5 October. Opus B's 3.45% came from a stale search snippet, not the page", "Finder: current figures, but one line to review: 'Barclaycard doesn't estimate your credit limit from a soft search'", "Moneyfacts: Barclaycard absent from its chart entirely. Same gap as item 2", "Controls recalled 3.45% from memory: old figures outlive page fixes"]],
+  ];
+  cols.forEach((c, i) => {
+    const x = M + i * 4.15;
+    card(s, x, 1.3, 3.95, 5.3, "chk" + i);
+    heading(s, c[0], x + 0.2, 1.4, 3.55, 12.5);
+    bullets(s, c[1], x + 0.2, 2.05, 3.55, 4.5, { fontSize: 10 });
+  });
+  source(s, "Live pages 11 October 2026 afternoon; deck/evidence/barclaycard_core_tnc_text.txt; what_to_do.md item 5.");
+}
+{
+  const s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "What to do" });
+  s.addText("Item 7: how we will know it worked, measured against the 11 October baseline", { placeholder: "title" });
+  const rows = [
+    ["Metric (8 web runs per cycle)", "Baseline", "PoC target by cycle 3"],
+    ["Barclaycard in the unprompted final top three (turn 2)", "1 of 8", "3 of 8"],
+    ["Barclaycard in the top three once the user names it (turn 3)", "7 of 8", "8 of 8"],
+    ["Barclaycard the single card to apply for (turn 4)", "0 of 8", "2 of 8"],
+    ["Runs that see the 22 month card from a comparison guide, not only barclaycard.co.uk", "0 of 8", "4 of 8"],
+    ["Runs calling a Barclaycard term 'up to' or 'not guaranteed' after reading the site", "7 of 8", "0 of 8"],
+    ["Runs with a wrong Barclaycard eligibility claim", "1 of 8", "0 of 8"],
+    ["Runs listing eligibility or soft-search status as missing at turn 5", "8 of 8", "0 of 8"],
+    ["Runs quoting a Barclaycard fee or APR that differs from the site on the day", "3 of 8", "0 of 8"],
+    ["Runs hitting a Barclaycard 404 or using a search page as the source", "5 of 8", "0 of 8"],
+  ];
+  table(s, rows, M, 1.3, 8.6, [5.8, 1.4, 1.4], { fontSize: 10, rowH: 0.42, name: "kpi table" });
+  heading(s, "Reading the numbers", 9.4, 1.3, 3.45, 12.5);
+  bullets(s, [
+    "Eight runs: one run moving changes a rate by 12.5 points. Read three cycles of direction, not one month",
+    "Keep all four model families, so a change in one vendor's retrieval is not read as a market change",
+    "Every metric is a count from the transcripts, scored the same way as results.csv, so a reviewer can recount it",
+    "Personas widen after the PoC: a £5,000 debt, a 36 month plan, an existing Barclays customer",
+  ], 9.4, 1.75, 3.45, 4.8, { fontSize: 10.5 });
+  source(s, "what_to_do.md item 7; results.csv; protocol.md.");
+}
+{
+  const s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "What to do" });
+  s.addText("Item 8: what is at stake, an order-of-magnitude estimate from public data", { placeholder: "title" });
+  const rows = [
+    ["Input", "Value", "Source"],
+    ["UK balance transfers, Apr 2025 to Mar 2026", "8.9m transfers, £20.5bn, average £2,290", "UK Finance Card Spending Update, March 2026"],
+    ["Barclays UK cards gross exposure, end 2025", "£17.2bn of £72.3bn UK balances, about 24%", "Barclays 2025 Results; UK Finance"],
+    ["Financial-product shoppers who used AI to assist", "17% (credit cards in the 15 to 20% band); under a quarter followed it outright, 72 to 80% compared it with other sources", "FCA / Yonder, n=5,026, April 2026"],
+    ["UK adults using AI tools", "54%, from 31% in 2024", "Ofcom 2026"],
+    ["Barclaycard in AI answers today", "unprompted top three 1 of 8; pick 0 of 8", "This study"],
+    ["Account value", "£400 per account over 10 years (assumption supplied)", "Head of Credit Cards"],
+  ];
+  table(s, rows, M, 1.3, 7.4, [2.5, 3.0, 1.9], { fontSize: 8.5, rowH: 0.46, boldFirstCol: true, name: "inputs table" });
+  const rows2 = [
+    ["Scenario", "AI sets the shortlist", "Gap to fair share", "Balances a year", "Accounts a year", "Value at £400 over 10 years"],
+    ["Low", "3%", "10 points", "£61m", "27,000", "£11m per cohort"],
+    ["Mid", "8%", "17 points", "£279m", "122,000", "£49m per cohort"],
+    ["High", "17%", "20 points", "£700m", "306,000", "£122m per cohort"],
+  ];
+  table(s, rows2, 8.2, 1.3, 4.65, [0.65, 0.85, 0.8, 0.75, 0.75, 0.85], { fontSize: 8.5, rowH: 0.5, boldFirstCol: true, shade: (i) => i === 2, name: "scenario table" });
+  bullets(s, [
+    [{ text: "The model: ", options: { bold: true } }, { text: "UK transfer value x share of decisions where an AI sets the shortlist x (Barclaycard's fair share, 20 to 25%, minus its share in AI answers, below 12.5%). Accounts = balances / £2,290. Value = accounts x £400." }],
+    [{ text: "Why the mid case leads: ", options: { bold: true } }, { text: "17% is the FCA's measured share of shoppers who used AI, before weighting for how many followed it; 8% applies the finding that most use AI to build the shortlist rather than follow it; 3% counts only those who followed it." }],
+    [{ text: "Direction: ", options: { bold: true } }, { text: "Ofcom's AI-tool usage doubled in two years; the FCA figure is six months old. Each year's cohort adds its own 10-year value: three years of the mid case is about £150m against running costs in the low tens of thousands a year." }],
+    [{ text: "A second value line: ", options: { bold: true } }, { text: "2 of 8 runs gave the customer a wrong fact about Barclaycard, a conduct and complaints exposure as well as a lost sale." }],
+  ], 8.2, 3.5, 4.65, 3.1, { fontSize: 9 });
+  source(s, "what_to_do.md item 8a; deck/evidence/ukfinance_card_spending_march2026_text.txt; FCA ai-consumer-research.pdf; Barclays FY25 results credit risk tables.");
+}
+{
+  const s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "What to do" });
+  s.addText("Item 8: proof of concept, then handover to run-the-bank", { placeholder: "title" });
+  card(s, M, 1.3, 5.9, 5.3, "poc");
+  heading(s, "Proof of concept, owned by the Head of Credit Cards", M + 0.2, 1.4, 5.5, 13);
+  bullets(s, [
+    [{ text: "Scope: ", options: { bold: true } }, { text: "balance transfers only; the existing persona with two credit profiles; four model families; web search on; five turns; eight runs a cycle. Baseline done 11 October." }],
+    [{ text: "Cycles: ", options: { bold: true } }, { text: "November, December, January, plus one before-and-after cycle the week after the first site change (items 1, 2, 4) goes live." }],
+    [{ text: "Success criteria: ", options: { bold: true } }, { text: "the item 7 targets: 22 month card seen from a guide in 4 of 8; no wrong eligibility claim; no rate or fee differing from the site; unprompted top three in 3 of 8 by cycle three." }],
+    [{ text: "Deliverables: ", options: { bold: true } }, { text: "the written scoring rubric; a one-page report per cycle; an end-of-January decision on widening personas and products." }],
+    [{ text: "Execution: ", options: { bold: true } }, { text: "the agency runs and scores; the Head of Credit Cards owns the decisions." }],
+  ], M + 0.2, 1.85, 5.5, 4.6, { fontSize: 10.5 });
+  card(s, 6.9, 1.3, 5.95, 5.3, "rtb");
+  heading(s, "Handover to run-the-bank: automate and monitor", 7.1, 1.4, 5.6, 13);
+  bullets(s, [
+    [{ text: "Scripted monthly runs ", options: { bold: true } }, { text: "against each vendor's API with the search tool on; persona and turn script from protocol.md; search logs captured as data." }],
+    [{ text: "Rubric scorer ", options: { bold: true } }, { text: "extracts rankings, picks, every Barclaycard figure and every URL; an analyst checks one run in five; a figure that differs from the live page is flagged the same day." }],
+    [{ text: "Nightly site hygiene monitor: ", options: { bold: true } }, { text: "404s on every 'See card details' link, APR consistency, eligibility and date lines, the 22 month card on barclays.co.uk, presence in MSE, Which? and Moneyfacts." }],
+    [{ text: "Dashboard and alerts: ", options: { bold: true } }, { text: "the item 7 table monthly; alerts to the product owner for a wrong fact, to the web team for a 404." }],
+    [{ text: "Ownership: ", options: { bold: true } }, { text: "card team decides; digital fixes the site and runs the monitor; analytics runs the scorer; compliance approves persona and prompts; agency on methodology for three cycles, then advisory." }],
+    [{ text: "Cost: ", options: { bold: true } }, { text: "model usage in the tens of pounds a month; four to six weeks of one engineer to build; one to two analyst days a month to run." }],
+  ], 7.1, 1.85, 5.6, 4.6, { fontSize: 10 });
+  source(s, "what_to_do.md items 8b and 8c.");
+}
+
+pres.addSection({ title: "Appendix" });
+{
+  const s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "Appendix" });
   s.addText("Appendix: where to check every claim", { placeholder: "title" });
   const rows = [
     ["Claim type", "Where", "How to test"],
