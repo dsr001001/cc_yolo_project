@@ -49,4 +49,22 @@ Result: four of the ten competitors checked publish a pound figure; three more s
 
 **Question put to the Head of Credit Cards.** Is the omission deliberate (a card meant for direct or app traffic only, or a test cell), a data-feed gap to the comparison sites, or not known about?
 
+**Decision (11 October 2026): closed.** Likely a legacy channel policy (shown on some channels, not others). Recommendation: show the 22 month card as an option everywhere Barclaycard balance-transfer cards appear: barclays.co.uk, the Barclays app, and the data feeds to MoneySavingExpert, Which?, Moneyfacts, Finder and other comparison sites, with the same tier information as the 36 month card so the guides can label it.
+
+**Test after the change.** Open barclays.co.uk's listing and the MSE and Which? guides and search for "22 month". Rerun the protocol: falsified as a fix if any run that opens a guide or barclays.co.uk still fails to see the card.
+
+## 3. "Up to" against "definite": the term-certainty label
+
+**Problem found.** MoneySavingExpert files HSBC, Virgin Money and Tesco under "definite" long deals ("ALL accepted get the full 0% length") and Barclaycard under "up to" ("if pre-approved you'll get the full 36 months; if not, you may get 36, 32 or 18 months and you'll only find out after applying"). Opus A, Opus B, Fable A and Fable B gave that label as the reason HSBC or Virgin stayed above Barclaycard; Haiku B made the same point with Tesco's "guaranteed". It was the single most-cited reason in the study. Evidence: E8, E9 (MSE blocks); transcripts A-opus turn 3, B-fable turn 3, A-fable turn 4, B-haiku turn 4.
+
+Three facts the models did not have:
+- HSBC's own page says "up to 36 months" and its FAQ gives three outcomes (36 at 25.9%, 36 at 29.9%, 14 at 29.9%). MSE's "definite" is MSE's label, not HSBC's. Opus A and Fable A found this at turn 5 and withdrew "definite". Evidence: E7b, ground_truth.md line 27.
+- Barclaycard already publishes "at least 7 out of 10 customers accepted last month received the longest promotional period" for the 22 month card, inside a collapsed accordion. Nothing equivalent exists for the 36 month card. Evidence: E5.
+- The 36, 32 or 18 tiers appear only on MSE. Barclaycard's own pages say "the balance transfer period and interest rates may differ from those shown" and nothing more.
+
+**Questions put to the Head of Credit Cards.**
+1. Can the full-term share be published for the 36 month card (and the 12 month card) the way it is for the 22 month card, and can it move out of the accordion into the card block?
+2. Is the tier structure on MSE (36, 32 or 18) current, and does Barclaycard supply it or does MSE infer it?
+3. Is there a case for making one card "definite" (every accepted applicant gets the full term), given that HSBC's product is in fact also conditional and wins on the label alone?
+
 **Decision.** Open.
