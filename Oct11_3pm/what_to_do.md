@@ -30,4 +30,23 @@ Result: four of the ten competitors checked publish a pound figure; three more s
 - Tier 1 (matches Virgin, Tesco): add "Available to UK residents aged 18 or over, subject to status" to every card block, and move the "won't affect your credit score" line from the page-bottom banner into each card block next to the eligibility checker link. No policy change needed.
 - Tier 2 (matches HSBC, Santander, NatWest, Nationwide): also state a minimum income and the adverse-credit exclusions Barclaycard applies. Needs the credit policy owner to confirm the figures can be published.
 
+**Decision (11 October 2026): closed.**
+1. State the criteria that are a regulatory constraint on every applicant, in every card block: aged 18 or over, UK resident, credit subject to status and affordability. These are already true, cost nothing to publish, and are what Virgin Money and Tesco publish.
+2. Look to competitors for the rest. Where Barclaycard's credit policy allows, match what HSBC, Santander, NatWest and Nationwide disclose (minimum income, adverse-credit exclusions). This needs the policy owner's confirmation and is not a condition of closing the item.
+3. The principle for this item and the ones that follow: be explicit in sharing what can already be shared but was held back for UI/UX reasons. On Barclaycard's own pages today that means:
+   - the "won't affect your credit score" soft-search line, which exists only in a banner below all five cards, so two runs said they could not tell whether the checker is a soft search;
+   - the "at least 7 in 10 accepted customers get the longest period" statement, which exists only inside a collapsed accordion on the 22 month page;
+   - the "what you'll need" list (address history, income before and after tax, outgoings, bank details), which exists only on the 22 month page;
+   - the statement that the 60 day transfer window and the 0% period run from account opening.
+   Move each into the card blocks on the listing page and onto every product page, in plain text, not in banners, accordions or footers that a page summariser drops.
+
+**Test after the change.** Rerun the protocol. Falsified as a fix if any run still lists eligibility or the soft-search status as missing at turn 5.
+
+
+## 2. The 22 month 1.49% card is absent from the comparison guides and from barclays.co.uk
+
+**Problem found.** The card is on barclaycard.co.uk only. It is not in MoneySavingExpert's tables (updated 7 October 2026), not in Which?'s tables (1 October 2026), and not on the barclays.co.uk balance-transfer listing, which shows four cards. Haiku A, which read barclays.co.uk, never learned it existed. Fable B could not rank it because MSE gives no tier range for it. Every run that found it ranked it above the 36 month card for an 18 to 24 month payoff plan, and it was the first fallback in four runs. Evidence: deck/evidence E10, E12, E3, P3, P5, P6.
+
+**Question put to the Head of Credit Cards.** Is the omission deliberate (a card meant for direct or app traffic only, or a test cell), a data-feed gap to the comparison sites, or not known about?
+
 **Decision.** Open.
