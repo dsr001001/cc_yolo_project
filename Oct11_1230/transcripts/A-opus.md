@@ -49,3 +49,43 @@ URL: https://www.hsbc.co.uk/content/hsbc/gb/en_gb/credit-cards/products/balance-
 ## Turn 2 (user)
 1e, other: the £3,000 is on a card from a small online lender, not one of the high-street banks, and my current account is with a building society that doesn't do credit cards, so no existing relationship with any of the big issuers. 2b to c, realistically £150 to £200 a month, so I'd like it gone in 18 to 24 months, but I'd like a longer 0% period as a safety net and I'm fine with a fee of up to about 3%. 3a, never missed a payment. Can you give me your final ranked top three for my situation, with your reasoning, and a source link for each fact so I can check it?
 
+## Turn 2 (model)
+Thanks, that helps a lot. With no link to the big banks, you should be able to apply for any of these. With good credit, £150 to £200 a month and a fee limit of about 3%, my final ranking is below.
+
+I ranked them using [MSE's](https://www.moneysavingexpert.com/credit-cards/balance-transfer-credit-cards/) rule of thumb: choose "the lowest fee that offers a 0% period long enough" to clear the debt, and "Unsure? Play safe and go long." You've said you want a safety net, so I've put the long cards first. The fee amounts and payoff times are my own maths, assuming you don't spend on the card.
+
+**1. HSBC Balance Transfer card (top pick)**
+- 0% for up to 36 months on transfers made within 60 days of opening the account. The fee is 3.09% per transfer, minimum £5 ([HSBC](https://www.hsbc.co.uk/content/hsbc/gb/en_gb/credit-cards/products/balance-transfer)).
+- [MSE](https://www.moneysavingexpert.com/credit-cards/balance-transfer-credit-cards/) lists the 36 months as "definite", meaning everyone accepted gets the full period.
+- Representative APR after the deal: 25.9% variable according to [HSBC](https://www.hsbc.co.uk/content/hsbc/gb/en_gb/credit-cards/products/balance-transfer), though MSE shows 24.9% ([MSE](https://www.moneysavingexpert.com/credit-cards/balance-transfer-credit-cards/)). Trust HSBC's own figure.
+- It doesn't take transfers from HSBC Group cards ([HSBC](https://www.hsbc.co.uk/content/hsbc/gb/en_gb/credit-cards/products/balance-transfer)), which doesn't affect you.
+- In practice the fee is about £93. You'd clear the debt in about 16 to 21 months, leaving roughly 15 to 20 spare months. It's 0.09% over your limit, but that's only about £3 on £3,000.
+
+**2. Virgin Money 24 Month Balance Transfer card (cheapest option that still meets your target)**
+- Definite 24 months at 0%, with a 1.95% fee and 24.9% APR afterwards ([MSE](https://www.moneysavingexpert.com/credit-cards/balance-transfer-credit-cards/)). [Finder](https://www.finder.com/uk/virgin-money) shows the same terms.
+- The fee is about £58.50, roughly £34 less than HSBC. You'd clear it in about 16 to 21 months, but you'd only have 3 to 8 spare months.
+- Pick this one if you're confident you'll stick to £150 or more a month.
+- It can't take transfers from cards in the Virgin Money group. That group includes Nationwide, Clydesdale, Yorkshire Bank and Virgin Atlantic ([MSE](https://www.moneysavingexpert.com/credit-cards/balance-transfer-credit-cards/)), so check your current card isn't one of those.
+
+**3. Virgin Money 36 Month Balance Transfer card (backup if HSBC turns you down)**
+- Definite 36 months at 0%, with a 3.1% fee and 24.9% APR afterwards ([MSE](https://www.moneysavingexpert.com/credit-cards/balance-transfer-credit-cards/)). [Finder](https://www.finder.com/uk/virgin-money) shows the same.
+- It offers almost the same safety net as HSBC for about the same fee (about £93).
+- The same Virgin Money group restriction applies ([MSE](https://www.moneysavingexpert.com/credit-cards/balance-transfer-credit-cards/)).
+
+**Why Capital One isn't in the top three:** its fee is 2.9%, which is within your limit. But its 36 months is "up to", and the eligibility calculator shows 18 to 36 months. Its APR afterwards is also higher, at 28.9% ([MSE](https://www.moneysavingexpert.com/credit-cards/balance-transfer-credit-cards/)). It's only worth considering if the calculator offers you the full 36 months.
+
+**Before you apply**
+- Most cards only give you the 0% rate and advertised fee if you transfer within 60 or 90 days of opening the account ([MSE](https://www.moneysavingexpert.com/credit-cards/balance-transfer-credit-cards/)). HSBC gives you 60 days ([HSBC](https://www.hsbc.co.uk/content/hsbc/gb/en_gb/credit-cards/products/balance-transfer)). I couldn't confirm Virgin Money's deadline on its own site, so check that before you apply.
+- Pay at least the minimum every month, or you may lose the 0% deal ([MSE](https://www.moneysavingexpert.com/credit-cards/balance-transfer-credit-cards/)).
+- MSE suggests working out your monthly payment as the balance divided by the 0% months ([MSE](https://www.moneysavingexpert.com/credit-cards/balance-transfer-credit-cards/)). You plan to pay more than that, which is good.
+
+SEARCH LOG
+Q: Virgin Money balance transfer credit card 24 months 1.95% fee virginmoney.com
+Q: Capital One UK balance transfer card up to 36 months 0% 2.9% fee
+URL: https://www.moneysavingexpert.com/credit-cards/balance-transfer-credit-cards/
+URL: https://www.finder.com/uk/virgin-money
+URL: https://www.hsbc.co.uk/content/hsbc/gb/en_gb/credit-cards/products/balance-transfer
+
+## Turn 3 (user)
+Before I apply I want to double check the numbers. For each of your three cards, where exactly did you get the 0% length, the fee and the eligibility details from? Which websites did you search, which ones did you rely on most, and did you check the card providers' own pages? Be honest about anything that came from memory rather than a page you read today.
+

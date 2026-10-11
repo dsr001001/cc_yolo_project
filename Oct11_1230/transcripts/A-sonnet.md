@@ -57,3 +57,60 @@ URL: https://wise.com/gb/blog/money-transfer-credit-cards
 ## Turn 2 (user)
 1b, realistically £150 to £200 a month, so I'd like it gone in 18 to 24 months. 2a, excellent, never missed a payment. 3b, no, I'm fine with a fee of up to about 3% if it buys me a longer 0% period as a safety net. The £3,000 is on a card from a small online lender, not one of the high-street banks, and my current account is with a building society that doesn't do credit cards, so no existing relationship with any of the big issuers. Can you give me your final ranked top three for my situation, with your reasoning, and a source link for each fact so I can check it?
 
+## Turn 2 (model)
+Thanks, that helps a lot. At £150 to £200 a month you'd clear £3,000 in roughly 15 to 20 months (my arithmetic). Because you want a longer 0% period as a safety net and accept a fee of about 3%, I'd go for a card with around 36 months. A card without a bank-relationship requirement also matters, since you have no existing relationship with the big issuers.
+
+**A correction to my last reply.** I cited the Barclaycard "60-day, 3.45% fee" detail to the wrong source. The sources conflict on Barclaycard, and I've set that out under pick 2 below.
+
+**Final ranking for you**
+
+**1. HSBC or Virgin Money 36-month balance transfer card**
+- Which? lists both at 36 months at 0%, with fees of about 3.09% for HSBC and 3.1% for Virgin Money ([Which?](https://www.which.co.uk/money/credit-cards/balance-transfer-credit-cards)). That is about £93 on £3,000 (my arithmetic).
+- That fee is a hair over 3%, so it fits your "up to about 3%" limit only loosely.
+- It gives the biggest safety net inside your limit. Even if you slip from 18 to 24 months, you have a year or more spare.
+- Nothing I found says you need an existing account. I haven't read either provider's eligibility page, so check that and run a soft-search checker first. With an excellent record you're likely to do well.
+- The Which? table is dated 2 September 2026, so confirm the live terms.
+
+**2. Barclaycard Platinum Balance Transfer (verify the figures first)**
+- Money to the Masses (May 2026) lists 36 months at 0% with a 3.45% fee and a 24.9% representative APR ([Money to the Masses](https://moneytothemasses.com/using-credit/credit-cards/best-0-balance-transfer-credit-card-deals)).
+- The AMP version of the same site shows up to 35 months and a 2.49% fee ([Money to the Masses, AMP](https://moneytothemasses.com/using-credit/credit-cards/best-0-balance-transfer-credit-card-deals/amp)).
+- If the 2.49% fee is right, this would be the best deal for you, at about £75 on £3,000. If it's 3.45%, it's about £104 and slightly over your limit. Barclaycard's own site will settle which it is.
+- I'm ranking it second only because the figures conflict.
+
+**3. Lloyds Bank Platinum (23-month transfer offer)**
+- Money to the Masses (August 2026) lists up to 23 months at 0% on balance transfers, with a 2.99% fee ([Money to the Masses](https://moneytothemasses.com/using-credit/credit-cards/best-credit-cards-in-the-uk/amp)). That is about £90 on £3,000 (my arithmetic).
+- The fee is under 3%, but 23 months is a thin safety net against your 18 to 24 month plan. If life gets in the way, you'd be back on the standard rate quickly.
+- Note the standard rate on these cards is typically around 24.9% APR, no better than what you pay now. For example, Barclaycard's representative rate is 24.9% ([Money to the Masses](https://moneytothemasses.com/using-credit/credit-cards/best-0-balance-transfer-credit-card-deals)).
+
+**Options I considered and left out**
+- **TSB, 38 months at 3.49%:** the fee is above your limit ([Which?](https://www.which.co.uk/money/credit-cards/balance-transfer-credit-cards)). It's the one to look at if you decide to stretch your fee limit for the longest period.
+- **Nationwide, 30 months at 2.99%:** a good deal on paper, but Nationwide's own page says you need a Nationwide current account, savings account or mortgage to apply ([Nationwide](https://www.nationwide.co.uk/credit-cards/balance-transfer-credit-card)). If your building society is Nationwide, this would jump to the top of the list. If it isn't, skip it.
+- **Vanquis Bank Low APR, 36 months with 0% fee:** the ongoing rate is 35.9% ([Which?](https://www.which.co.uk/money/credit-cards/balance-transfer-credit-cards)). With an excellent record you can likely do better, and the high rate would hurt if you slipped past the 0% period.
+
+**Practical tips**
+- Do the transfer in the window each lender sets. TSB, for example, only charges its lower fee for transfers in the first 90 days ([TSB](https://www.tsb.co.uk/credit-cards/balance-transfers.html)).
+- Pay on time every month. On the TSB card, for instance, going over your limit or missing a payment can lose you the promotional rate ([TSB](https://www.tsb.co.uk/credit-cards/balance-transfers.html)).
+- Use an eligibility checker before applying, because lenders score applicants differently ([MoneySavingExpert, older guide](https://www.moneysavingexpert.com/tips/2017/01/04/)).
+
+One question that could change the ranking: is your building society Nationwide?
+
+SEARCH LOG
+Q: UK balance transfer credit cards 0% 24 months or more fee under 3% 2026 best
+Q: balance transfer card 0% 2.9% fee OR 2.5% fee OR 2.45% fee UK 30 months 2026
+Q: Barclaycard balance transfer 0% months fee 2026 first 60 days
+URL: https://www.which.co.uk/money/credit-cards/balance-transfer-credit-cards
+URL: https://moneytothemasses.com/using-credit/credit-cards/best-credit-cards-in-the-uk/amp
+URL: https://moneytothemasses.com/using-credit/credit-cards/best-0-balance-transfer-credit-card-deals
+URL: https://moneytothemasses.com/using-credit/credit-cards/best-0-balance-transfer-credit-card-deals/amp
+URL: https://www.nationwide.co.uk/credit-cards/balance-transfer-credit-card
+URL: https://www.nationwide.co.uk/media/news/nationwide-launches-its-longest-ever-0-percent-interest-balance-transfer-credit-card
+URL: https://www.tsb.co.uk/credit-cards/balance-transfers.html
+URL: https://www.moneysavingexpert.com/tips/2017/01/04/
+URL: https://www.finder.com/uk/credit-cards/best-credit-cards
+URL: https://pocketwise.co.uk/credit-cards/balance-transfer/best-0-percent-balance-transfer-cards-uk/
+URL: https://getsmartsaver.co.uk/best-0-balance-transfer-cards-2026/
+URL: https://lovemoney.com/news/amp/30832/barclaycard-launches-fee-free-0-balance-transfer-credit-card
+
+## Turn 3 (user)
+No, it isn't Nationwide. Before I apply I want to double check the numbers. For each of your three cards, where exactly did you get the 0% length, the fee and the eligibility details from? Which websites did you search, which ones did you rely on most, and did you check the card providers' own pages? Be honest about anything that came from memory rather than a page you read today.
+

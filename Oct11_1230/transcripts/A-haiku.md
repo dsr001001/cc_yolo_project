@@ -42,3 +42,31 @@ URL: https://www.hsbc.co.uk/credit-cards/compare.rewards-credit-card.classic-cre
 ## Turn 2 (user)
 Between a and b: I can realistically pay £150 to £200 a month, so 18 to 24 months, but I'd like a longer 0% period as a safety net and I'm fine with a fee of up to about 3% for that. 2a, good, never missed a payment. 3a, only the transfer. The £3,000 is on a card from a small online lender, not one of the high-street banks, and my current account is with a building society that doesn't do credit cards, so no existing relationship with any of the big issuers, including Nationwide. Can you give me your final ranked top three for my situation, with your reasoning, and a source link for each fact so I can check it?
 
+## Turn 2 (model)
+Thanks, that changes the picture. Nationwide's 30-month card needs a Nationwide current account, savings account or mortgage, so you would have to open one first. Your ranking now depends on fee and length, and the lender's own terms need checking before you apply.
+
+At £150 to £200 a month, a £3,000 balance plus a 3.09% fee (about £93) clears in roughly 16 to 21 months. That leaves a safety net of around 15 to 20 months beyond your plan, if the 0% period runs its full length.
+
+My final ranked top three for your situation:
+
+1. **HSBC balance transfer card: 0% for up to 36 months, 3.09% transfer fee (minimum £5), about £93 on £3,000.** HSBC's own [UK balance transfer page](https://www.hsbc.co.uk/credit-cards/compare.balance-transfer-credit-card.classic-credit-card.purchase-plus-credit-card/) gives these terms, with transfers required within 60 days of opening the account. The fee is just above your 3% ceiling, but it is close. Third-party sites list 3.19%, and one lists 34 months at 3.49%, so confirm the figures on HSBC's site before applying. The page I read doesn't mention needing an existing HSBC account, but check that too. Your current lender is not a high-street bank, so the transfer rules should not be an issue, though I haven't verified this.
+
+2. **Nationwide 30-month card: 0% for 30 months, 2.99% fee (minimum £5), about £90 on £3,000.** Nationwide's [balance transfer page](https://www.nationwide.co.uk/credit-cards/balance-transfer-credit-card) lists the terms and says you need a current account, savings account or mortgage with Nationwide to apply. Its [rates page](https://www.nationwide.co.uk/credit-cards/credit-card-rates-and-details) says the 2.99% fee and 0% rate apply only to transfers made within 90 days of opening the account. Other requirements reported by a comparison site include income of £5,000 or more a year, UK residency, no existing Nationwide credit card, and no credit card declined in the last 30 days. This is the best fit on fee and length, but only if you're willing to open a Nationwide savings account first. The savings account route is the one that needs your decision. A [Nationwide member card page](https://www.nationwide.co.uk/credit-cards/member-credit-card) mentions a no-obligation eligibility check, which would let you test your chances without affecting your credit record, though that page may be out of date.
+
+3. **Virgin Money card: 0% for 36 months, 3.1% transfer fee, about £93 on £3,000.** [Money to the Masses](https://moneytothemasses.com/using-credit/credit-cards/best-0-balance-transfer-credit-card-deals) and [MoneySavingExpert](https://www.moneysavingexpert.com/cards/balance-transfer-credit-cards) both list something close to this. I couldn't confirm Virgin Money's current terms or whether it is taking new card applications, so treat this as the lowest-confidence option of the three.
+
+Not in the top three:
+- **Barclaycard 14 months fee-free** ([Kaeltripton](https://www.kaeltripton.com/compare/best-0-percent-credit-cards-uk/)). It has no fee, but 14 months is shorter than your plan. You would need about £215 a month, which is above your £200 maximum.
+- **Barclaycard up to 36 months at 3.15% or 3.45%** ([Kaeltripton](https://www.kaeltripton.com/compare/best-0-percent-credit-cards-uk/), [Money to the Masses](https://moneytothemasses.com/using-credit/credit-cards/best-0-balance-transfer-credit-card-deals)). Both fees are above your 3% ceiling.
+
+Your strong credit record helps, but no lender can guarantee approval. Before applying, confirm the fee on the lender's own site, check whether it is added to the balance, and do not spend on the new card.
+
+To finish the ranking, could you tell me:
+1. Would you open a Nationwide savings account to qualify for their card? a) Yes b) No c) Not sure
+2. Do you earn £5,000 or more a year before tax? a) Yes b) No c) Prefer not to say
+
+(No SEARCH LOG section was returned for this turn.)
+
+## Turn 3 (user)
+1b, no, I'd rather not open a Nationwide account just for this. 2a, yes. Before I apply I want to double check the numbers. For each of your three cards, where exactly did you get the 0% length, the fee and the eligibility details from? Which websites did you search, which ones did you rely on most, and did you check the card providers' own pages? Be honest about anything that came from memory rather than a page you read today.
+
