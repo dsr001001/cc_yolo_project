@@ -173,4 +173,58 @@ Eight runs is a small sample: one run moving changes a rate by 12.5 points, so r
 1. Who owns the monthly rerun and the report: the card team, digital, or the agency?
 2. Should the persona set widen (a £5,000 debt, a 36 month plan, a customer who already banks with Barclays) once the first changes are live?
 
-**Decision.** Open.
+**Decision (11 October 2026).** Personas can be many, but the first step is a proof of concept with one persona. The Head of Credit Cards will execute the exercise, then hand it to a run-the-bank team to automate and monitor. A commercial value estimate is needed to get attention at the right level: see item 8.
+
+## 8. Commercial value, proof of concept, and handover to run-the-bank
+
+### 8a. What is at stake: an order-of-magnitude estimate from public data
+
+Every input below is public and dated; the two that matter most (account value and Barclaycard's share of transfers) should be replaced with figures from the pricing playbook before the number goes to a senior audience. The model is three multiplications, so each input can be swapped without rebuilding it.
+
+| Input | Value | Source |
+|---|---|---|
+| UK credit card balance transfers, April 2025 to March 2026 | 8.9 million transfers, £20.5 billion, average £2,290 | UK Finance Card Spending Update, March 2026, table "of which balance transfers", summed over 12 months |
+| UK credit card balances outstanding, March 2026 | £72.3 billion | Same UK Finance table |
+| Barclays UK cards gross exposure, 31 December 2025 | £17.2 billion (2024: £15.8 billion), "following a growth in spend and new promotional balance lending"; includes Tesco Bank | Barclays PLC 2025 Results Announcement, credit risk tables |
+| Implied Barclaycard share of UK card balances | about 24% (17.2 / 72.3; bases differ, so treat as 20 to 25%) | Derived |
+| UK adults who shopped for, took out or switched a financial product in the last 12 months | 69% | FCA / Yonder AI Consumer Research, n=5,026, fieldwork April 2026 |
+| Of those, used AI to assist | 17% (over 1 in 5 among AI users); credit-card shoppers sit in the 15 to 20% band on the FCA chart | Same |
+| What they did with the AI output | 72 to 80% compared it with other sources; "less than a quarter" followed the suggestion; 2 to 6% ignored it | Same |
+| UK adults using AI tools at all | 54% (2024: 31%) | Ofcom Adults' Media Use and Attitudes 2026 |
+| UK adults who used AI to help manage money in the last 12 months | 56%; 26% of those for debt management; ChatGPT used by about six in ten | Lloyds Banking Group Consumer Digital Index, November 2025 |
+| Barclaycard's position in AI answers today | unprompted top three 1 of 8 runs; pick 0 of 8; first or second fallback 7 of 8 | This study, 11 October 2026 |
+
+**The model.** Balances at stake per year = UK transfer value x share of decisions where an AI assistant sets the shortlist x (Barclaycard's fair share minus its AI share). Fee income = balances x 3.15%. Account value = fee income x a multiple from the playbook (post-promotional interest, interchange, retention, less funding and credit cost).
+
+| Scenario | AI sets the shortlist | Fair share minus AI share | Balances at stake | Fee income at 3.15% |
+|---|---|---|---|---|
+| Low | 3% of £20.5bn = £0.6bn | 10 points | £61m | £1.9m a year |
+| Mid | 8% = £1.6bn | 17 points | £279m | £8.8m a year |
+| High | 17% = £3.5bn | 20 points | £700m | £22m a year |
+
+How the scenario inputs were set: 17% is the FCA's measured share of financial-product shoppers who used AI in April 2026, before weighting for how many followed it, so it is the ceiling for today; 8% applies the FCA's finding that under a quarter follow the suggestion outright but most use it to build the shortlist; 3% counts only those who followed the suggestion. "Fair share" is Barclaycard's 20 to 25% of balances; "AI share" today is below its unprompted top-three rate of 12.5%, since a top-three entry converts less than a pick. The spread between scenarios is the honest uncertainty; the mid case is the one to present, with the range.
+
+Two things the public numbers cannot do: convert fee income to account value (the playbook can, and the multiple is usually several times the fee), and say how fast the AI share grows. On the second, the direction is not in doubt: Ofcom's AI-tool usage went from 31% to 54% in two years, and the FCA's 17% was measured six months ago.
+
+**The cost side.** The exercise itself costs little: model usage for 8 to 24 runs a month is in the tens of pounds; the build is four to six weeks of one engineer; run-the-bank is one to two analyst days a month. At the low scenario the gap is fifty times the running cost.
+
+**A second value line, avoided harm.** In 2 of 8 runs an assistant gave a customer a wrong fact about Barclaycard (a non-existent current-account requirement; a stale 3.45% fee). That is a conduct and complaints exposure as well as a lost sale, and it is measurable monthly.
+
+### 8b. Proof of concept: scope, success criteria, duration
+
+- **Scope.** One product family (balance transfers), the existing persona with two credit profiles, four model families, web search on, five turns. Eight runs per cycle. The baseline is done (11 October 2026).
+- **Cycles.** Three: November, December, January. Plus one before-and-after cycle timed to the first site change (items 1, 2 and 4), run the week after the change goes live.
+- **Success criteria.** Measured against the item 7 baseline: the 22 month card seen from a guide in at least 4 of 8 runs; no run with a wrong eligibility claim; no run quoting a rate or fee that differs from barclaycard.co.uk; Barclaycard in the unprompted top three in at least 3 of 8 runs by cycle three.
+- **Deliverables.** The scoring rubric (results.csv columns, written down); three cycle reports on one page each; a decision at the end of January on widening personas (a £5,000 debt, a 36 month plan, an existing Barclays customer) and products (purchase cards, loans).
+- **Owner during the PoC.** The Head of Credit Cards, with the agency executing the runs and the scoring.
+
+### 8c. Handover to run-the-bank: what to automate and monitor
+
+1. **Scripted runs.** The persona, turn script and scoring are already written (protocol.md, results.csv). Automate them against each vendor's API with the web-search tool on, on a monthly schedule, with the SEARCH LOG captured as structured data (query, URL, opened or snippet).
+2. **Automated scoring with a human check.** A rubric scorer extracts the top three per turn, Barclaycard placement, the pick, every Barclaycard figure quoted, and every URL opened. An analyst spot-checks one run in five. Any Barclaycard figure that differs from the live page on the day is flagged the same day.
+3. **Site hygiene monitor, nightly.** Separate from the model runs: fetch the Barclaycard and Barclays balance-transfer pages and check for 404s on every "See card details" link, APR consistency within a page, presence of the eligibility line, presence of the date line, presence of the 22 month card on barclays.co.uk, and presence of each card in the MSE, Which? and Moneyfacts tables. This catches the item 5 class of problem before a model does.
+4. **Dashboard and alerts.** The item 7 table as a monthly dashboard; alerts to the product owner for a wrong Barclaycard fact in any run, and to the web team for a 404 or a missing card.
+5. **Ownership.** Product owner: the card team (reads the dashboard, decides changes). Digital: site fixes and the hygiene monitor. Data or analytics: the runs and the scorer. Compliance: approves the persona and prompts once, and any change to them. The agency: methodology and the first three cycles, then advisory.
+6. **Runbook.** How to add a persona, a product or a model; how to re-baseline after a vendor changes its retrieval; how to read a month where one run moves (12.5 points) without over-reacting.
+
+**Decision.** Open: confirm the mid-case framing for the senior audience, and whether the account-value multiple can be supplied from the playbook.
