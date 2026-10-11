@@ -71,3 +71,29 @@ Sources: Nationwide (balance transfer credit card, Virgin Money integration), Wh
 ## Turn 3 (user)
 Thanks. If I get declined for that one, what's my next best option? And is there anything that could trip me up along the way?
 
+## Turn 3 (model)
+Good questions, and worth having the fallback mapped out before you apply rather than after.
+
+**If Barclaycard declines you**
+
+1. **Vanquis Low APR Balance Transfer** is the clear next step: 36 months at 0%, no transfer fee, and Vanquis is built for exactly your credit profile. It's genuinely the cheapest deal in the whole market if you're accepted and clear it in time. The things to watch: the 35.9% APR afterwards (so you must be done inside the 36 months), and the starting limit, which may be under £3,000. If they offer you, say, £2,000, take it, move £2,000 across and attack the remaining £1,000 on the old card first since it's still at 24.9%.
+2. **Fair-credit cards with shorter 0% periods** (Fluid, Aqua, Capital One, Tesco's "fair credit" tier): usually 9 to 20 months at 0% with a fee around 3 to 4%. These sit below Vanquis for you because the periods are tight for a 2-year plan and the limits are often small.
+3. **If everything declines:** stop applying. Spend 3 to 6 months paying down what you can on the current card, wait for the missed payment to pass the 2-year mark, and re-run the eligibility checker. One rejection isn't a disaster; three in a row with hard searches is what actually damages your score.
+
+Timing tip: if Barclaycard declines, run the eligibility checker again before applying to Vanquis rather than applying straight away. Leave a couple of weeks between hard searches if you can.
+
+**Things that could trip you up**
+- **The "up to" trap.** If Barclaycard offers you, say, 22 months rather than 36, that's the deal, and it's still fine for your plan. Just make sure you read the actual offer letter and base your repayment plan on the real end date, not the advert.
+- **Missing the transfer window.** Barclaycard gives 60 days from account opening to request the transfer; some cards give 90. Request it the day the card arrives. If you miss the window, you've got a card with no 0% on it.
+- **A limit lower than £3,000.** Lenders often cap transfers at around 90 to 95% of your limit, so a £3,200 limit might only let you move £2,900. Move as much as you can and prioritise the leftover on the old card.
+- **One late payment kills the 0%.** Most issuers reserve the right to withdraw the promotional rate if you miss a payment, and it would also add a fresh missed payment to your file. Set a direct debit for a fixed amount (£150+) the day the account opens, not just the minimum.
+- **Spending on the new card.** Purchases typically aren't at 0% on a balance transfer card, and if they are it's usually for a short window. Keep the new card in a drawer.
+- **The fee goes on the balance.** The ~£95 fee is added to the transferred amount, so you'll owe about £3,095 at 0%. Budget for it so you're not caught out at the end.
+- **The old card's final statement.** Interest accrues daily, so a few pounds of residual interest usually appears after the transfer goes through. Check the old account a month later and clear any small remainder, otherwise it sits there racking up 24.9% and possibly a late fee.
+- **Don't rush to close the old card.** Once it's at zero, leaving it open (unused) actually helps your credit utilisation while you rebuild. Close it later if you don't trust yourself with it, or ask the lender to lower the limit.
+- **Changing your details right before applying.** Lenders like stability. Don't change address, job or bank account in the weeks around the application if you can avoid it, and make sure the address you give exactly matches the electoral roll entry.
+- **The end of the 0% period.** Put a reminder in your calendar two months before it ends. If there's any balance left at that point, you can shift it again, but only if your credit file is in good shape, which brings it back to paying on time every month.
+
+You're in a better position than you might think: with £150 to £200 a month you'll likely be clear with months to spare, and 18 to 24 months of clean payments on a mainstream card will push you out of the Fair band too.
+
+(No sources cited in this reply.)

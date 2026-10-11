@@ -50,3 +50,23 @@ Sources: Nationwide (balance transfer credit card; credit card rates and details
 ## Turn 3 (user)
 Thanks. If I get declined for that one, what's my next best option? And is there anything that could trip me up along the way?
 
+## Turn 3 (model)
+If Nationwide declines you, the next best option is the **HSBC 36-month balance transfer card**: 0% for up to 36 months, with a 3.09% fee (minimum £5), about £93 on £3,000. That's just over your 3% limit but still close. I haven't confirmed that HSBC accepts applicants with no existing HSBC account, so check its eligibility first. HSBC also requires transfers within the first 60 days, so act quickly if you're approved.
+
+Other options I'd rank below that:
+- **Barclaycard Platinum, 36 months at 0%, 3.15% fee:** similar to HSBC, slightly higher fee.
+- **Santander Everyday No Balance Transfer Fee card, 12 months at 0%, no fee:** shorter, but a good fallback. At £175 a month you'd pay off about £2,100 in the first year, leaving roughly £900 that would still need clearing.
+
+One correction: I earlier mentioned a Vanquis card with 0% for 36 months and no fee. That's wrong. Vanquis's Low APR balance transfer card charges 9.9% or 12.9%, not 0%, so it wouldn't fit your plan. Its standard balance transfer card offers 0% for 19 months with a fee of up to 3.9%, which is a weaker option.
+
+Things that could trip you up:
+- **Credit limit:** the transfer fee is added to the balance, so the limit needs to cover about £3,090. If it doesn't, you'll need to pay off the rest of the old card some other way. Some cards also cap transfers at a percentage of the limit.
+- **Transfer window:** Nationwide's 0% rate only applies to transfers made within 90 days of opening the account. Transfer the balance as soon as the card is approved.
+- **Keep paying the old card** until the transfer is confirmed. Transfers can take days or weeks, and a missed payment on the old card can cost you.
+- **Missed payments:** a missed or late payment on the new card can end the 0% deal and bring in a higher rate.
+- **Purchases:** don't use the new card for spending. Purchases are charged at the standard rate, and payments may not clear the transfer balance first, depending on the card's terms.
+- **Hard searches:** each full application can leave a mark on your credit file, and several applications in a short space of time can count against you. Check whether a lender offers an eligibility check before you apply.
+- **After the 0% period ends:** any balance left goes to the standard variable rate, which is around 24.9%. Plan to clear it before the deadline.
+- **Fees and rates:** card terms change often, so check the current figures on each provider's website before applying.
+
+Sources: Vanquis (Low APR balance transfer card), Nationwide (balance transfer credit card), Money to the Masses (0% balance transfer deals), Which? (best 0% balance transfer credit cards).

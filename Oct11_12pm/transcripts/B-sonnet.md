@@ -87,3 +87,29 @@ Sources: Which? (best 0% balance transfer credit cards), Nationwide (balance tra
 ## Turn 3 (user)
 Thanks. If I get declined for that one, what's my next best option? And is there anything that could trip me up along the way?
 
+## Turn 3 (model)
+**If HSBC declines you, go to Virgin Money's 36 Month Balance Transfer card next.** NatWest's 36-month card is the one after that.
+
+- **Why Virgin Money:** it has nearly the same terms as HSBC (36 months, about 3.1% fee, roughly £93 on £3,000). It's a different lender with its own scoring, so a decline from one doesn't mean a decline from the other.
+- **Why NatWest second:** it's the same deal again (36 months, about 3.1%).
+- **Check first:** figures are from the Which? table of 2 September 2026, so confirm them on each lender's site.
+- **If all three say no:** don't keep applying. A longer-period card from a lender that accepts Fair scores may be worth it even with a slightly higher fee. Use a comparison site's eligibility checker (MoneySavingExpert, ClearScore or Experian) and look for cards showing a high acceptance chance. Don't pick on the 0% length alone.
+- **Fallback with a catch:** TSB (up to 38 months, 3.49%) is over your fee limit, but it's still far cheaper than 24.9% if it's the only one that accepts you. Vanquis has no fee but a 35.9% standard APR, so only use it if you're certain you'll clear the balance in time.
+
+**Order to work in:** soft-search eligibility checks on HSBC, Virgin Money and NatWest. Then do one full application, to whichever shows the best odds. Wait if you get declined, because each application leaves a mark on your file.
+
+**What could trip you up**
+1. **Missing a payment.** One missed or late payment can end the 0% deal on the whole balance. Set a direct debit for a fixed £150 to £200, not the minimum, and leave a cushion in your account.
+2. **Transfer timing.** Many cards only give 0% on transfers made in the first 60 to 90 days. Do it as soon as you're approved.
+3. **Credit limit.** It may be lower than £3,000 plus the fee (about £3,093). Then you can only transfer part of it, and the rest keeps charging 24.9%.
+4. **Headline vs your offer.** "Up to 36 months" is a maximum. You may be offered less, and the fee can differ too. Read the offer before you accept, and withdraw if it isn't worth it.
+5. **Old card still charging.** Interest and the minimum payment keep running until the transfer lands, which can take a few days to two weeks. Keep paying the old card's minimum, and don't close it before the transfer is confirmed.
+6. **Fee on top.** The fee (about £93) is usually added to the new balance, not taken from your £3,000. Include it when working out your monthly payment.
+7. **New spending.** Any purchases on the card usually charge interest straight away, and payments can go to the 0% balance first. Treat the card as debt-only.
+8. **Looking for a second card later.** A new card after this is possible, but each application affects your score. Wait until the first is well under way.
+9. **Same-group transfers.** You can't normally move a balance between cards from the same banking group. Yours is a small online lender, so this is unlikely to matter.
+10. **Where you stand when it ends.** If anything is left when the 0% period ends, it reverts to the standard rate, which is also around 24.9%. At £150 to £200 a month you should clear it with over a year to spare, which is why the 36-month card is a good safety net.
+
+If money gets tight, contact the lender before missing a payment, not after. This is general information, not personalised financial advice.
+
+Sources: Which? (best 0% balance transfer credit cards), ClearScore (0% balance transfer lengths), Comparethemarket (credit cards).

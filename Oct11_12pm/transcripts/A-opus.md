@@ -75,3 +75,27 @@ Sources: Which? (best 0% balance transfer credit cards 2026), MoneySavingExpert 
 ## Turn 3 (user)
 Thanks. If I get declined for that one, what's my next best option? And is there anything that could trip me up along the way?
 
+## Turn 3 (model)
+If HSBC turns you down, go next for **Virgin Money or NatWest**. Both have about 36 months at 0% with a fee of about 3.1%, so they're almost the same as HSBC. A lender's "up to 36 months" deal can also come back shorter for your application, so either of these is worth trying even if HSBC accepts you on worse terms.
+
+**If you're declined:**
+1. **Wait before you apply again.** Leave it at least a couple of weeks, and a few months if you can. Several applications close together look bad to lenders.
+2. **Check your credit files for free.** Use ClearScore for Equifax, Credit Karma for TransUnion and MSE Credit Club for Experian. Look for mistakes such as an old address, an account that isn't yours or a payment wrongly marked as late, and get any errors corrected.
+3. **Make sure you're on the electoral roll** at your current address. Missing from it is a common reason people with a clean history still get declined.
+4. **Run soft-search eligibility checks again** and apply only where your odds are high.
+5. **If the 36-month cards won't accept you,** a shorter deal of about 24 months still matches your plan. You'd just have less buffer. A personal loan at a fixed rate could also beat 24.9%.
+
+**Things that can trip you up:**
+- **You might get a shorter 0% period or a lower limit than advertised.** Read the offer before you accept it. With a lower limit, transfer what fits and keep paying the rest off the old card.
+- **The 0% clock usually starts when the account opens,** not when you move the balance. Do the transfer straight away.
+- **Make the transfer within the deadline,** usually 60 to 90 days. After that, any transfer may not get 0%.
+- **Keep paying your old card until the transfer clears.** It can take up to about two weeks.
+- **A small amount may be left on the old card.** Interest added since your last statement can leave a few pounds there. Check for it and pay it off, or it'll keep growing at 24.9%.
+- **A missed or late payment can end the 0% rate.** The same goes for going over your limit. A direct debit protects you here.
+- **Don't take cash out on the new card.** Cash withdrawals are charged a fee plus interest straight away.
+- **Aim to clear it before the 0% ends.** Anything left after that is charged at the card's standard rate, which is often about 25%.
+- **Think about any big borrowing coming up,** like a mortgage. A new application leaves a hard search on your file, which lenders will see for a while.
+
+If you do these things, the only cost on the whole £3,000 should be the fee of about £93.
+
+Sources: MoneySavingExpert (balance transfer credit cards), Which? (best 0% balance transfer credit cards 2026).

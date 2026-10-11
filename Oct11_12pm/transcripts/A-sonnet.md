@@ -70,3 +70,24 @@ Sources: TSB (balance transfers), ClearScore (Lloyds balance transfer cards), Na
 ## Turn 3 (user)
 Thanks. If I get declined for that one, what's my next best option? And is there anything that could trip me up along the way?
 
+## Turn 3 (model)
+If Lloyds declines you, the next best option is **Nationwide's balance transfer card**: 30 months at 0% with a 2.99% fee, which is about £90 on £3,000. It's the next-longest deal I found that stays under your 3% limit, though I haven't re-checked it today, so confirm the terms first. Nationwide is a building society, so check whether you need to be a member. I'd expect it to be open to non-members, but verify that.
+
+If Nationwide also says no, these are the fallbacks, in order:
+1. **Virgin Money.** It's reported at 34 months, and one report mentions a 40-month deal with a 2.99% fee. I couldn't confirm which is current, so check before applying. If the fee is 3% or under, it could even beat Lloyds on length.
+2. **TSB (38 months, 3.49% fee).** It's about £105 on £3,000, which is over your 3% ceiling. I'd only use it if everything else fails and you decide the extra length is worth roughly £30 more than Lloyds.
+3. **NatWest/RBS (up to 34 months).** The fee is 3.15% or 3.49% depending on the source, so it's likely over your limit as well.
+
+**What could trip you up**
+- **Applications leave a mark on your file.** Each full application is a hard credit search, and several in quick succession can look bad and lower your scores. Don't apply for all of them. Use eligibility checkers (MoneySavingExpert, MoneySupermarket, ClearScore), which use soft searches, and apply to one card at a time, only when the checker shows a high chance of acceptance.
+- **A shorter offer than advertised.** The advertised term often goes only to the best-rated applicants. You may be approved with a shorter 0% period or a smaller limit, so read the offer before you accept it.
+- **A limit too low to cover the transfer.** It needs to cover the £3,000 plus the fee. If it doesn't, you might only move part of the balance, so you'd still pay 24.9% on the rest.
+- **Missing the transfer window.** Most issuers only give the 0% rate on transfers made within a set period after you open the account, often 60 to 90 days. Transfer straight away.
+- **Missing a minimum payment.** One late or missed payment can cancel the 0% deal and drop you onto the standard rate. A direct debit for at least the minimum, and ideally £175 or so, prevents this.
+- **New spending.** Purchases usually aren't at 0%, and repayments typically clear the 0% balance first, so anything you spend sits at a high rate. Keep the card for the transfer only.
+- **The old card.** Check the transfer has gone through before you stop paying it, and keep paying its minimum until the balance shows as zero. Once it's cleared, stop using it.
+- **You can't transfer between cards from the same provider.** If your current lender is part of the same group as the new card, the transfer may be refused. Check the new lender's rules.
+- **The fee is added to the balance.** It's about £75 at Lloyds, and you owe it on top of the £3,000.
+- **The end of the 0% period.** Any balance left when it ends is charged at the card's standard rate, often 20% or more. Aim to clear it well before then.
+
+Sources: TSB (balance transfers), ClearScore (Lloyds balance transfer cards), Nationwide (longest-ever 0% balance transfer card), Which? (Virgin Money longest-lasting 0% card), RBS (longer balance transfer).

@@ -58,3 +58,27 @@ Sources: Which? (best 0% balance transfer credit cards 2026), Finder (best credi
 ## Turn 3 (user)
 Thanks. If I get declined for that one, what's my next best option? And is there anything that could trip me up along the way?
 
+## Turn 3 (model)
+**If Barclaycard says no**
+
+Your next best option is **HSBC's 36-month balance transfer card** (fee about 3.1%), followed by **NatWest's 36-month card** (also about 3.1%). They're the same deal in all but name, so just move down the list. If all three long cards turn you down, drop to the next tier: something in the 24 to 30 month range from the likes of Tesco Bank, M&S Bank, Halifax or MBNA, which is still plenty for your timeline and often easier to get.
+
+But a few things about the "declined" scenario itself:
+
+- **Don't apply blind.** Every full application leaves a hard search on your credit file, and two or three in quick succession make lenders nervous. Run the soft-search eligibility checkers first (MoneySavingExpert's Credit Club or ClearScore cover most issuers in one go, or use Barclaycard's own). Only apply where you're shown 70%+ odds. With a clean record and no missed payments, you should get a clear picture before committing.
+- **If you are declined, wait.** Give it a few weeks before trying the next card, and in the meantime check your credit reports (Experian, Equifax and TransUnion, all free) for anything odd: an old address, a missing electoral roll entry, a mis-recorded late payment. A small online lender card may also report differently from a high-street one, so check it's showing correctly.
+- **A "yes, but" is more likely than a "no".** The commoner outcome for someone in your position is approval at a shorter 0% period (say 24 to 30 months instead of 36) or a credit limit below £3,000. Both are still fine for your plan (24 months at £150/month works), so don't reject it reflexively.
+
+**Things that could trip you up**
+1. **Missing the transfer deadline.** Barclaycard gives 60 days, most others 90. After that the fee jumps (often to 5%) or the 0% doesn't apply. Set up the transfer as soon as the card arrives.
+2. **A credit limit below your balance.** Transfer what you can; keep paying the remainder on the old card hard until it's gone. Don't leave the leftover drifting at 24.9%.
+3. **Missing a single payment.** Most issuers withdraw the 0% deal entirely for one missed payment. A direct debit for the minimum is your insurance; then pay your £150 to 200 on top manually or set the direct debit to a fixed amount.
+4. **Spending on the new card.** Purchases usually aren't at 0% and, worse, your payments may be allocated in a way that keeps the interest-bearing balance alive. Treat it as a repayment-only card.
+5. **Spending on the old card.** Once it's cleared, the temptation is to treat the freed-up limit as spare money. Close it, or at least remove it from your phone and wallet.
+6. **Not watching the end date.** At £150/month you'll be done around month 21, well before 36, but put the promo end date in your calendar anyway. If anything slips, you'd want to arrange another transfer a month or two before interest kicks in.
+7. **Applying for other credit at the same time.** A new phone contract, car finance or a loan in the weeks around your application lowers your chances. Get the balance transfer sorted first.
+8. **Fee maths.** Make sure you've budgeted for £3,000 plus the roughly £95 fee, so your monthly figure is based on £3,095, not £3,000.
+
+One last reassurance: the fee is a one-off, so the worst case (paying ~£95 to borrow £3,000 for up to three years) is still less than two months of what you're paying now.
+
+Sources: Which? (best 0% balance transfer credit cards 2026), Finder (best credit cards 2026), Kaeltripton (best 0% credit cards UK), Money to the Masses (best 0% balance transfer deals), Compare the Market (guide to credit cards).

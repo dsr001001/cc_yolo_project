@@ -71,3 +71,28 @@ Sources: MoneySavingExpert (balance transfer credit cards), Which? (best 0% bala
 ## Turn 3 (user)
 Thanks. If I get declined for that one, what's my next best option? And is there anything that could trip me up along the way?
 
+## Turn 3 (model)
+If HSBC turns you down, try the next card on this list, one application at a time:
+
+1. **Virgin Money, definite 36 months at 0% (about 3.1% fee).** It's almost the same as HSBC, so you keep your long safety net. Check your odds with its eligibility checker first.
+2. **Tesco Bank, 24 months at 0% (2.75% fee).** It's a shorter safety net, but you'd still clear it in time: about £128 a month to finish within 24 months, and at £150 to £200 you'd be done in roughly 16 to 21 months.
+3. **A card aimed at Fair credit, such as Vanquis's Low APR card**, which Which? lists with a long 0% period and no fee. Lenders like this are more likely to accept you, but the credit limit may be lower and the terms vary from person to person. Check exactly what you're offered.
+4. **If no 0% card will accept you,** a small personal loan to pay off the card is the fallback. Rates vary a lot with your credit, so only do it if the rate is well below 24.9%. Ideally, overpay your current card while you build up your credit for a few months and then try again.
+
+**If you get declined**
+- **Don't apply again straight away.** Leave a few weeks between full applications, and always check your odds with an eligibility checker first.
+- **Check your credit report** (Experian, Equifax and TransUnion all offer free versions). Make sure there are no mistakes, like an old address or an account that isn't yours, and fix anything that's wrong.
+- You can ask the lender why they turned you down. They won't tell you much, but it might show if it was about affordability rather than your history.
+
+**Things that could trip you up**
+- **A credit limit below £3,000.** If this happens, transfer what you can and pay off the rest on your old card as fast as possible.
+- **Your old card keeps charging interest until the transfer clears.** That can take a couple of weeks, so keep paying the old card until its balance shows £0.
+- **The fee gets added to your balance.** Your new balance would be about £3,093, not £3,000.
+- **Transfer deadline.** The 0% only applies to transfers made within the window, often 60 to 90 days from opening.
+- **Missing a payment, or going over your limit,** can end the 0% early. Set up a direct debit.
+- **Spending on the new card,** or taking cash out. These usually come with interest and make your monthly payments go to the wrong thing.
+- **"Up to" offers.** Look at how many months you were actually offered, not the headline number.
+- **The end date.** Put the date the 0% ends in your calendar. Anything left after that date goes up to a normal rate of around 20 to 30%.
+- **Your old card.** Once it's cleared, don't use it again. Keeping it open (unused) can help your credit score by keeping more credit unused, but close it if you'd be tempted to spend on it.
+
+Sources: MoneySavingExpert (balance transfer credit cards), Which? (best 0% balance transfer credit cards 2026), Tesco Bank (Balance Transfer Credit Card), Pocketwise (0% balance transfer cards UK 2026).
