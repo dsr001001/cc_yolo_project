@@ -130,3 +130,32 @@ URL: https://uk.virginmoney.com/virgin/credit-cards/balance-transfer (opened)
 ## Turn 5 (user)
 Before I apply I want to double check. For each card you named today, where exactly did the 0% length, the fee and the eligibility details come from? Which sites did you rely on most, did you open the providers' own pages, and what came from memory rather than a page? And what information was missing from the card providers' own pages that would have helped you advise me?
 
+## Turn 5 (model)
+No new searches for this one; it's an audit of what I already used. Here's the provenance, card by card, then what I relied on most and what the providers' own pages lacked.
+
+**Where each fact came from**
+
+| Card | 0% length | Fee | Eligibility / conditions |
+|---|---|---|---|
+| Virgin Money 24 month | "Definite 24 months": [MSE](https://www.moneysavingexpert.com/credit-cards/balance-transfer-credit-cards/) (page dated 7 Oct 2026); corroborated by [Finder](https://www.finder.com/uk/credit-cards/virgin-money/virgin-balance-transfer) (undated) | 1.95%: MSE, Finder | 18+, UK resident, 60-day transfer window, no transfers from Nationwide/Virgin cards, 0% lost on a missed minimum: [Virgin Money's own page](https://uk.virginmoney.com/virgin/credit-cards/balance-transfer) (opened, but it headlines an "up to 36 months" product at 27.9% APR, not the 24-month card) |
+| Capital One up to 36 month | "Up to 36, you'll get 18 to 36, result shown before applying": MSE | 2.9%, 28.9% APR after: MSE | "Positioned for less-than-perfect credit": [Money to the Masses review](https://moneytothemasses.com/using-credit/credit-cards/capital-one-balance-transfer-credit-card-review), an older review of an earlier version of the card (it quotes 18 months and a 3% fee), so treat that as weak |
+| Tesco Bank Low Fee | "Guaranteed 20 months": [Tesco Bank's own page](https://www.tescobank.com/credit-cards/low-fee-balance-transfer-credit-card/) (opened); matches MSE | 1.25%: Tesco Bank | 18+, UK resident, subject to status, 90-day transfer window, 24.9% after: Tesco Bank |
+| Barclaycard up to 36 / 22 / 12 month | "Up to" figures, 60-day window, "period may differ from those shown": [Barclaycard's own page](https://www.barclaycard.co.uk/personal/credit-cards/balance-transfer-credit-cards) (opened). The 36/32/18 and 12/6 fallback lengths and "pre-approval guarantees the full term": MSE only; I found no fallback range for the 22-month card anywhere | 3.15% / 1.49% / 0%: Barclaycard | "Depends on financial circumstances and borrowing history", £20 cashback needs a Barclays current account and app application before 10:00 on 20 Oct 2026, Apple TV offer new customers only: Barclaycard. Which? 77% customer score: [Which?](https://www.which.co.uk/money/credit-cards-and-loans/credit-cards/best-credit-card-deals/best-0-balance-transfer-credit-cards-atMFj4R64A0D) (tables dated 1 Oct 2026) |
+| Nationwide 30 month | 30 months, 2.99% or £5 minimum, 90-day window, 24.9% APR, needs a Nationwide current account, savings account or mortgage, £5,000+ income: [Nationwide's own page](https://www.nationwide.co.uk/credit-cards/balance-transfer-credit-card/) (opened) | | |
+| HSBC 36 month, TSB 38 month, Santander 12 month | HSBC definite 36 at 3.09%: MSE. TSB 38 at 3.49% and Santander 12 months no fee: Which?. None of these providers' own pages were opened | | |
+
+**Sites I relied on most:** MoneySavingExpert's balance transfer guide (dated 7 October 2026) carried the most weight, especially for the "definite" versus "up to" distinction and the fallback lengths, followed by Which? (1 October 2026). Provider pages I actually opened: Barclaycard, Tesco Bank, Nationwide and Virgin Money. Provider pages I tried and could not open: Virgin Money's specific 24-month product page (404), Capital One (404 on two URLs), Lloyds (site error), and Barclaycard's individual 12-month page (404; the figures came from Barclaycard's main balance-transfer page instead).
+
+**What came from me rather than a page:** all the arithmetic (fee in pounds, months to clear, the "roughly £60 a month in interest" figure, the "about £120" value of the Apple TV perk, the "done by mid-2028" line). The judgement calls are also mine: that "definite" matters more than price for someone in the Fair band, and the ranking itself. No 0% length, fee, APR or eligibility rule came from memory. Two things I saw in search snippets but deliberately did not rely on: a Comparethemarket snippet giving Lloyds 23 months at 2.99% (the page also referenced an offer ending 10 August 2026, so it may be stale), and a ClearScore January 2026 piece on Lloyds and TSB.
+
+**What was missing from the providers' own pages**
+- Virgin Money's page does not show the 24-month 1.95% card at all; it headlines an "up to 36 months" card at 27.9% APR and doesn't state the fee. That's the single biggest gap for my top pick.
+- Barclaycard doesn't publish what shorter periods you might be given on any card, or any minimum age, income or credit criteria; the 36/32/18 and 12/6 fallbacks are MSE's information.
+- Tesco Bank gives no income requirement and nothing on how it treats a past missed payment.
+- Capital One's pages were unreachable, so everything on it is second-hand.
+- None of the provider pages I opened say how a single missed payment 20 months ago affects acceptance, or publish the proportion of applicants who get the headline 0% length. That's the information that would most have sharpened the advice for your situation.
+
+SEARCH LOG
+No new searches or page fetches for this reply. Everything above comes from the pages already logged in earlier turns, plus:
+Q: site:uk.virginmoney.com balance transfer credit card 24 months 1.95%
+URL: https://uk.virginmoney.com/virgin/credit-cards/balance-transfer (opened)

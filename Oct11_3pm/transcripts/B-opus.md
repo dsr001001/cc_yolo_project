@@ -186,3 +186,62 @@ URL: https://www.nationwide.co.uk/credit-cards/balance-transfer-credit-card (ope
 ## Turn 5 (user)
 Before I apply I want to double check. For each card you named today, where exactly did the 0% length, the fee and the eligibility details come from? Which sites did you rely on most, did you open the providers' own pages, and what came from memory rather than a page? And what information was missing from the card providers' own pages that would have helped you advise me?
 
+## Turn 5 (model)
+No new searches this turn: this is an audit of what I already did, card by card.
+
+**How I collected the information (worth knowing)**
+- **"Opened"** means I fetched the provider's page. Even then, the tool gives me an automated summary of the page, not the raw page, so I could miss small print.
+- **"Search result"** means the figure came from an automated summary of search results. I never opened that page. Those figures are weaker.
+
+**HSBC Balance Transfer** (my pick)
+- **0% length (up to 36 months, transfers within 60 days):** HSBC's own page, opened twice today ([HSBC](https://www.hsbc.co.uk/credit-cards/products/balance-transfer/)). On the second visit I found that HSBC may give you 14 months instead of 36, depending on its assessment.
+- **Fee (3.09%, minimum £5) and APR (25.9%):** the same opened HSBC page. Which?'s table (search result only) said 24.9% APR, so I went with HSBC's figure.
+- **Eligibility (18+, UK resident, income of £6,800+, the 6-month rule, the HSBC Group transfer ban):** the opened HSBC page.
+
+**Barclaycard Platinum 36-month and 22-month**
+- **0% lengths, fees (3.15% and 1.49%), 24.9% APR, 60-day window, cashback conditions:** Barclaycard's own credit cards listing page, opened ([Barclaycard](https://www.barclaycard.co.uk/personal/credit-cards)).
+- **I could not open the 36-month card's own product page** (it returned "not found").
+- **The 3.45% figure** was a search result only ([Money to the Masses](https://moneytothemasses.com/using-credit/credit-cards/best-0-balance-transfer-credit-card-deals)).
+- **Eligibility:** the listing page gave almost nothing. It said only that approval depends on your circumstances and history.
+
+**Nationwide Balance Transfer:** 0% length (30 months, 90-day window), fee (2.99% or £5), APR (24.9%), eligibility (18+, UK resident, £5,000+ income, must be a member, no Nationwide card in the last 12 months): Nationwide's own balance transfer page, opened ([Nationwide](https://www.nationwide.co.uk/credit-cards/balance-transfer-credit-card)). I first spotted this card in a Nationwide press release in search results ([Nationwide news](https://www.nationwide.co.uk/media/news/nationwide-launches-its-longest-ever-0-percent-interest-balance-transfer-credit-card)).
+
+**Virgin Money Balance Transfer:** 0% length (36 months, 60 days), APR (27.9%), eligibility, 95% limit, Nationwide/Virgin Money transfer ban, soft search: Virgin Money's own page, opened ([Virgin Money](https://uk.virginmoney.com/virgin/credit-cards/balance-transfer)). Fee: not on that page. The 3.1% figure came only from a Which? search result.
+
+**TSB Platinum Balance Transfer:** 38 months, 3.49% fee, 24.9% APR, eligibility: TSB's balance transfers page, opened ([TSB](https://www.tsb.co.uk/credit-cards/balance-transfers)). The "transfers within 90 days" rule for the 0%: only from a search-result snippet of TSB's main credit cards page.
+
+**Lloyds Platinum:** 18 months and the 2.99% fee: a Finder search result only. Lloyds' own site showed an error page both times I tried it.
+
+**Santander Everyday:** 15 months at 0% with no fee: a search result only. I didn't open the page.
+
+**Barclaycard 12 months with no fee (from my first reply):** first from a Finder search result, later confirmed on Barclaycard's opened listing page.
+
+**Which sites I relied on most:** the providers' own pages, which I opened for HSBC, Barclaycard (listing page only), Nationwide, Virgin Money and TSB. Then Which? and Finder, but only through search results.
+
+**What came from memory or my own reasoning, not a page:** my own maths; the ranking and its weighting; general tips (running checkers, one application at a time, not spending on the card, direct debit, lower limit possible). One correction: my first reply said "most" providers use soft searches. Only Virgin Money's page actually said so. No card figure came from memory.
+
+**What was missing from the providers' own pages that would have helped**
+1. **How they treat a single late payment or a "Fair" score.** No page said. This is the biggest gap for you.
+2. **How HSBC decides between 14 and 36 months**, and whether its checker shows which you'd get.
+3. **Whether HSBC's and Barclaycard's checkers are soft searches.** Neither page said.
+4. **Virgin Money's transfer fee.**
+5. **Barclaycard's eligibility rules** (age, income, residency) and **any restriction on transferring from Barclays cards**, because the product page wouldn't load.
+6. **Typical credit limits.** Every page used an assumed £1,000 to £1,200 limit in its example, which tells you nothing about whether you'd get £3,000.
+7. **TSB:** whether you can transfer from a TSB card, and a clear deadline for getting the 0%.
+8. **When each page was last updated.** None of them showed a date.
+
+SEARCH LOG
+No new searches or page fetches this turn. All sources listed above were gathered earlier in this conversation:
+URL: https://www.hsbc.co.uk/credit-cards/products/balance-transfer/ (opened)
+URL: https://www.barclaycard.co.uk/personal/credit-cards (opened)
+URL: https://www.nationwide.co.uk/credit-cards/balance-transfer-credit-card (opened)
+URL: https://www.nationwide.co.uk/credit-cards/ (opened)
+URL: https://uk.virginmoney.com/virgin/credit-cards/balance-transfer (opened)
+URL: https://www.tsb.co.uk/credit-cards/balance-transfers (opened)
+URL: https://www.tsb.co.uk/credit-cards
+URL: https://www.which.co.uk/money/credit-cards/balance-transfer-credit-cards
+URL: https://www.finder.com/uk/credit-cards/best-credit-cards
+URL: https://www.finder.com/uk/credit-cards/lloyds-bank/lloyds-bank-online-platinum-purchase-and-balance-transfer-mastercard
+URL: https://moneytothemasses.com/using-credit/credit-cards/best-0-balance-transfer-credit-card-deals
+URL: https://www.santander.co.uk/personal/credit-cards/everyday-credit-card
+URL: https://www.nationwide.co.uk/media/news/nationwide-launches-its-longest-ever-0-percent-interest-balance-transfer-credit-card

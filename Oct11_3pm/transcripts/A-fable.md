@@ -164,3 +164,62 @@ URL: https://www.finder.com/uk/credit-cards/virgin-money/virgin-balance-transfer
 ## Turn 5 (user)
 Before I apply I want to double check. For each card you named today, where exactly did the 0% length, the fee and the eligibility details come from? Which sites did you rely on most, did you open the providers' own pages, and what came from memory rather than a page? And what information was missing from the card providers' own pages that would have helped you advise me?
 
+## Turn 5 (model)
+Fair question, and I'd rather you check than trust me. Here's exactly where each figure came from.
+
+**Which sites I relied on most**
+- MoneySavingExpert's balance transfer page, which states it was last updated 7 October 2026 ([MSE](https://www.moneysavingexpert.com/credit-cards/balance-transfer-credit-cards/)). I opened and read it in two parts. It's the source for every "definite" versus "up to" classification, for the fee/length rule of thumb, and for the cards whose provider pages I couldn't reach.
+- Which?'s best 0% balance transfer table, dated 1 October 2026 ([Which?](https://www.which.co.uk/money/credit-cards-and-loans/credit-cards/best-credit-card-deals/best-0-balance-transfer-credit-cards-atMFj4R64A0D)), opened, used as a cross-check.
+- Provider pages I opened directly: HSBC, Barclaycard, Nationwide, Tesco Bank, and Virgin Money's credit card hub. Two Virgin Money product URLs and Capital One's page returned 404, and Finder's Virgin Money page ([Finder](https://www.finder.com/uk/credit-cards/virgin-money/virgin-balance-transfer)) was opened but is dated July 2025, so I used it only for Virgin's transfer rules, not for the current deal.
+
+**Card by card**
+
+*Virgin Money 24 months, 1.95% fee, 24.9% APR after: my pick*
+- 0% length, fee, APR and "definite" status: MSE only. Not corroborated by any provider page. Which? doesn't list this card.
+- Virgin Money's hub: 27.9% representative APR, UK residents aged 18+, no transfers from other Virgin Money or Nationwide cards ([Virgin Money](https://uk.virginmoney.com/credit-cards/)). It does not show the 0% length or fee for any card.
+- 60-day transfer window, 95%-of-limit rule, 0% cancelled if you exceed your limit: Finder, July 2025, so treat as possibly out of date.
+- This is the weakest-sourced card in my ranking, which is why my first "change the pick" condition is that Virgin's application page must show 24 months and 1.95%.
+
+*HSBC 36 months, 3.09% fee*
+- Up to 36 months on transfers within 60 days, 3.09% fee (minimum £5), 25.9% rep APR, 18+, UK resident, £6,800 minimum income, no HSBC Basic Bank Account, no new HSBC card or limit increase in the last 6 months, no transfers from HSBC/first direct/M&S cards: all from HSBC's own page, opened ([HSBC](https://www.hsbc.co.uk/credit-cards/products/balance-transfer/)).
+- "Definite 36 months" and the 24.9% APR figure: MSE; Which? also shows 36 months/3.09%/24.9%. Note HSBC's own page says "up to" and that the rate and period depend on its assessment, which is softer than MSE's "definite".
+
+*Barclaycard (all five cards)*
+- Up to 22 months/1.49%, up to 36 months/3.15%, up to 12 months/0%, up to 24 and 21 months/3.45%, 24.9% rep APR, 60-day transfer window, £20 cashback conditions (Barclays current account, apply in app, £2,500+ transfer within 60 days), Apple TV and cashback offers ending 10:00 on 20 October 2026, app for 18+, "terms offered may differ": Barclaycard's own page, opened ([Barclaycard](https://www.barclaycard.co.uk/personal/credit-cards/balance-transfer-credit-cards)).
+- The 36/32/18 and 12/6 month tiers and "full length only if pre-approved": MSE. MSE did not mention the 22-month card at all; that came solely from Barclaycard's page.
+- Which? lists the 12-month no-fee card as a Best Buy.
+
+*Nationwide 30 months, 2.99% fee:* everything (30 months, 2.99% or £5 minimum within 90 days, 2.4% after 90 days, 24.9% APR, 18+, UK resident, £5,000 income, must hold a Nationwide current account, savings account or mortgage): Nationwide's own page, opened ([Nationwide](https://www.nationwide.co.uk/credit-cards/balance-transfer-credit-card/)).
+
+*Tesco Bank Low Fee 20 months, 1.25% fee:* MSE only. Tesco's page, opened, names the Low Fee card but gives no figures for it; it details only the 35-month/3.15% card ([Tesco Bank](https://www.tescobank.com/credit-cards/balance-transfer/)).
+
+*Capital One up to 36 months, 2.9%, 28.9% APR after:* MSE only. Capital One's page 404'd.
+
+*TSB 38 months, 3.49%:* Which? and MSE (which lists it as "up to" and only via TSB's own tool). TSB's page not opened. One search result claimed the TSB deal had been withdrawn, but both current comparison pages still list it; I didn't open that article.
+
+*Virgin Money 36 months, 3.1%:* MSE and Which?; Finder also shows it but from 2025.
+
+**What came from me rather than a page**
+- All the arithmetic: fee amounts in pounds, months-to-clear at £150 and £200, the "about £60 a month" interest at 24.9% on £3,000, and the roughly £3,160 credit limit needed under the 95% rule.
+- The ranking and the trade-offs between fee, cushion and certainty are my judgement, informed by MSE's rule of thumb.
+- The advice that multiple applications leave hard searches on your file is general knowledge about UK credit files; I attributed it to MSE last time, but the part of MSE's page I read only said its calculator is a soft search, so treat that specific point as mine, not MSE's.
+- General good practice (standing order, don't spend on the card) is mine.
+
+**What the providers' own pages were missing**
+- Virgin Money: the actual product page. Its hub shows an APR but not the 0% length, fee, transfer window or minimum income for any card. That's the single biggest gap, given it's the card I picked.
+- Tesco Bank: no figures at all for the Low Fee card on its balance transfer page.
+- Barclaycard: no minimum income or age for the cards themselves, no explanation of how it decides who gets 36, 32 or 18 months, and it doesn't say whether the 60-day window runs from account opening.
+- HSBC: it says the period depends on its assessment but gives no sense of how often applicants get less than 36 months; the APR disagrees with MSE and Which? (25.9% versus 24.9%) and I couldn't tell which is stale.
+- None of the provider pages say what credit limit a typical applicant gets, or how long a transfer takes to land.
+- Capital One: its page wasn't reachable at all.
+
+SEARCH LOG
+No new searches or page fetches this turn. Sources used in this reply, all opened earlier in this conversation:
+URL: https://www.moneysavingexpert.com/credit-cards/balance-transfer-credit-cards/ (opened)
+URL: https://www.which.co.uk/money/credit-cards-and-loans/credit-cards/best-credit-card-deals/best-0-balance-transfer-credit-cards-atMFj4R64A0D (opened)
+URL: https://www.barclaycard.co.uk/personal/credit-cards/balance-transfer-credit-cards (opened)
+URL: https://www.hsbc.co.uk/credit-cards/products/balance-transfer/ (opened)
+URL: https://www.tescobank.com/credit-cards/balance-transfer/ (opened)
+URL: https://uk.virginmoney.com/credit-cards/ (opened)
+URL: https://www.nationwide.co.uk/credit-cards/balance-transfer-credit-card/ (opened)
+URL: https://www.finder.com/uk/credit-cards/virgin-money/virgin-balance-transfer (opened)
