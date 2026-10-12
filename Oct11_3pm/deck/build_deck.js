@@ -328,6 +328,68 @@ pres.addSection({ title: "Introduction" });
   s.addText("Barclaycard in AI balance-transfer advice: model by model", { placeholder: "title" });
   s.addText("What each of four AI assistants asked, read, recommended and said about Barclaycard when a UK customer with £3,000 of card debt asked for a 0% balance transfer. Web-search runs only, two credit profiles per model, five turns each.\nPrepared for the Head of Credit Cards. Transcripts and screenshots captured 11 October 2026.", { placeholder: "body" });
 }
+// ---------- Executive summary ----------
+{
+  const s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "Introduction" });
+  s.addText("Executive summary 1 of 3: AI assistants know Barclaycard, read its pages correctly, and still never pick it", { placeholder: "title" });
+  const tiles = [["1 of 8", "runs put Barclaycard in the unprompted top three", "Turn 2, after the customer's details"], ["7 of 8", "runs put it in the top three once the customer named it", "Turn 3"], ["0 of 8", "runs chose it as the card to apply for", "Turn 4; HSBC 3, Virgin Money 4, Tesco 1"], ["2 of 8", "runs told the customer something wrong about Barclaycard", "A current-account requirement that does not exist; a stale 3.45% fee"]];
+  tiles.forEach((t, i) => {
+    const x = M + i * 3.1;
+    card(s, x, 1.3, 2.9, 1.85, "exec tile " + i);
+    s.addText(t[0], { x: x + 0.15, y: 1.38, w: 2.6, h: 0.72, fontSize: 34, bold: true, color: C.accent1, margin: 0, valign: "middle", isTextBox: true, objectName: "exec big " + i });
+    s.addText(t[1], { x: x + 0.15, y: 2.1, w: 2.6, h: 0.55, fontSize: 11, bold: true, color: C.text2, margin: 0, valign: "top", isTextBox: true, objectName: "exec label " + i });
+    s.addText(t[2], { x: x + 0.15, y: 2.72, w: 2.6, h: 0.4, fontSize: 9, color: C.text1, margin: 0, valign: "top", isTextBox: true, objectName: "exec sub " + i });
+  });
+  bullets(s, [
+    [{ text: "What was done. ", options: { bold: true } }, { text: "On 11 October 2026 four AI assistants (Haiku, Sonnet, Opus, Fable) with web search were each asked, twice, to recommend a 0% balance transfer card to a UK customer with £3,000 of card debt, over five turns: a top three, the customer's details, a question about Barclaycard, a forced single pick, and a request to show every source. Forty turns, every reply logged with the pages it opened." }],
+    [{ text: "Why Barclaycard loses. ", options: { bold: true } }, { text: "The assistants build the shortlist from comparison guides (Which?, MoneySavingExpert) and check provider pages second. The guides do not list the 22 month 1.49% card, the best fit for this customer, and label the 36 month card 'up to' against HSBC's 'definite'. Barclaycard's own pages carry no eligibility line, put promotional text above the terms, return 404s on product pages, and show an APR that contradicts the headline. The 3.15% fee decided ties against HSBC's 3.09%." }],
+    [{ text: "What is not wrong. ", options: { bold: true } }, { text: "Every figure an assistant read from barclaycard.co.uk was reported correctly. With no web access, every assistant names Barclaycard among the leaders from memory. The gap is in distribution and disclosure, not awareness or price." }],
+  ], M, 3.4, 12.3, 3.2, { fontSize: 11.5 });
+  source(s, "Sections 2 to 6 of this deck; Oct11_3pm/transcripts; results.csv.");
+}
+{
+  const s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "Introduction" });
+  s.addText("Executive summary 2 of 3: what is at stake, an order-of-magnitude estimate", { placeholder: "title" });
+  const rows2 = [
+    ["Scenario", "Share of transfer decisions where an AI sets the shortlist", "Gap between fair share and AI share", "Balances at stake a year", "Accounts a year", "Value at £400 per account over 10 years"],
+    ["Low", "3%", "10 points", "£61m", "27,000", "£11m per annual cohort"],
+    ["Mid", "8%", "17 points", "£279m", "122,000", "£49m per annual cohort"],
+    ["High", "17%", "20 points", "£700m", "306,000", "£122m per annual cohort"],
+  ];
+  table(s, rows2, M, 1.3, 12.3, [1.0, 3.2, 2.3, 1.9, 1.6, 2.3], { fontSize: 10, rowH: 0.5, boldFirstCol: true, shade: (i) => i === 2, name: "exec scenario" });
+  bullets(s, [
+    [{ text: "The chain. ", options: { bold: true } }, { text: "UK cardholders moved £20.5 billion in 8.9 million balance transfers in the year to March 2026 (UK Finance). Barclays holds about 24% of UK card balances (£17.2bn of £72.3bn). 17% of people who shopped for a financial product in the year to April 2026 used an AI assistant to help, and under a quarter of those followed it outright while most used it to build their shortlist (FCA, n=5,026). In the AI answers studied, Barclaycard's share is below its 12.5% unprompted top-three rate." }],
+    [{ text: "Balances at stake ", options: { bold: true } }, { text: "= £20.5bn x AI-shortlist share x (fair share minus AI share). Accounts = balances / £2,290 average transfer. Value = accounts x £400 over 10 years (Head of Credit Cards' assumption)." }],
+    [{ text: "Which case to believe. ", options: { bold: true } }, { text: "The mid case takes the FCA's finding that most AI users build a shortlist with it rather than follow it; the high case is today's measured AI usage with no discount; the low case counts only those who followed the suggestion. AI-tool usage among UK adults went from 31% to 54% in two years (Ofcom), so the share grows from here." }],
+    [{ text: "Cost of acting. ", options: { bold: true } }, { text: "The six decisions are page wording, data feeds and URL fixes; no price change. Running the monitor is in the low tens of thousands of pounds a year. A second value line is avoided harm: wrong facts given to customers in 2 of 8 runs." }],
+  ], M, 3.5, 12.3, 3.1, { fontSize: 11 });
+  source(s, "Slide 'Item 8: what is at stake' and what_to_do.md item 8 for every input and its source.");
+}
+{
+  const s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "Introduction" });
+  s.addText("Executive summary 3 of 3: the decisions taken and the ask", { placeholder: "title" });
+  card(s, M, 1.3, 6.1, 5.3, "decided");
+  heading(s, "Decided with the Head of Credit Cards, 11 October", M + 0.2, 1.4, 5.7, 13);
+  bullets(s, [
+    [{ text: "Show the 22 month card everywhere ", options: { bold: true } }, { text: "Barclaycard balance-transfer cards appear: barclays.co.uk, the app, and the feeds to MSE, Which? and Moneyfacts." }],
+    [{ text: "Put the regulatory eligibility line in every card block ", options: { bold: true } }, { text: "and surface what is already published but hidden: the soft-search line, the full-term statement, the documents list." }],
+    [{ text: "Replace 'up to 36 months' with a definite list ", options: { bold: true } }, { text: "of the terms an accepted applicant can be offered. No published odds." }],
+    [{ text: "Move promotional text below the terms ", options: { bold: true } }, { text: "and state that no Barclays account is needed for the card." }],
+    [{ text: "Correct the APR and fee mismatches; ", options: { bold: true } }, { text: "rates right in real time at every listing, with a visible date; a dateless terms file with the edition inside." }],
+    [{ text: "Keep the 3.15% fee. ", options: { bold: true } }, { text: "A conscious pricing decision under the weekly-reviewed playbook." }],
+  ], M + 0.2, 1.85, 5.7, 4.6, { fontSize: 12, space: 8 });
+  card(s, 6.8, 1.3, 6.05, 5.3, "ask");
+  heading(s, "The ask", 7.0, 1.4, 5.65, 13);
+  bullets(s, [
+    [{ text: "Digital capacity ", options: { bold: true } }, { text: "for the page changes on barclaycard.co.uk and barclays.co.uk in the next release, and a separate check of the 404s and broken images." }],
+    [{ text: "Comparison-site feeds: ", options: { bold: true } }, { text: "the 22 month card, with its term options, to MSE, Which?, Moneyfacts and Finder." }],
+    [{ text: "A three-cycle proof of concept, ", options: { bold: true } }, { text: "November to January: eight runs a month against the 11 October baseline, with a before-and-after cycle timed to the first site change. Owned by the Head of Credit Cards; the agency runs and scores." }],
+    [{ text: "A run-the-bank home from February: ", options: { bold: true } }, { text: "scripted monthly runs, a rubric scorer, a nightly site hygiene monitor, a dashboard with alerts; card team decides, digital fixes, analytics runs, compliance approves the persona." }],
+    [{ text: "Cost: ", options: { bold: true } }, { text: "four to six weeks of one engineer to build; one to two analyst days a month; model usage in the tens of pounds a month." }],
+  ], 7.0, 1.85, 5.65, 4.6, { fontSize: 12, space: 8 });
+  source(s, "what_to_do.md items 1 to 8; section 'What to do' of this deck.");
+}
+
 {
   const s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "Introduction" });
   s.addText("The conversation every model had: one opening question, then four fixed follow-ups", { placeholder: "title" });
