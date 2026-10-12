@@ -728,6 +728,73 @@ pres.addSection({ title: "Appendix" });
   source(s, "Study repository, folder Oct11_3pm.");
 }
 
+{
+  const s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "Appendix" });
+  s.addText("Appendix: value working, steps 1 to 4 (the inputs)", { placeholder: "title" });
+  const rows = [
+    ["Step", "Figure", "Source and arithmetic", "Weakest point"],
+    ["1. The pool", "£20.5bn in 8.9m balance transfers a year; £2,293 average", "UK Finance Card Spending Update, March 2026, row 'of which balance transfers', April 2025 to March 2026 summed: value £1,536m + £1,599m + £1,608m + £1,672m + £1,528m + £1,826m + £1,708m + £1,561m + £1,586m + £2,229m + £1,744m + £1,863m = £20,460m; volume 668k + 697k + 704k + 735k + 671k + 786k + 737k + 677k + 702k + 1,017k + 735k + 793k = 8,922k", "Counts every transfer onto any card, including onto existing cards and repeat transfers. New-card acquisition is a subset; if it is 60% of the pool, every value scales by 0.6"],
+    ["2. Fair share", "About 24%, used as 20 to 25%", "Barclays 2025 Results: UK cards gross exposure £17.2bn at 31 Dec 2025 (includes Tesco Bank). UK Finance: £72.3bn UK card balances, March 2026. 17.2 / 72.3 = 23.8%", "Different bases and dates; share of balances, not of transfers. Replace with Barclaycard's share of the balance-transfer market if known"],
+    ["3. AI sets the shortlist", "3%, 8%, 17%", "FCA / Yonder, n=5,026, April 2026: 69% shopped for a financial product; 17% of those used AI; credit-card shoppers 15 to 20%; 72 to 80% compared the AI's advice with other sources; under a quarter followed it; 2 to 6% ignored it. High = 17% undiscounted. Mid = 8%, roughly 17% x (a quarter who followed plus a fraction of those who compared). Low = 3%, roughly 17% x 0.2, those who followed only", "The 8% weighting is a judgement between two measured ends, not a measured figure. The input most worth arguing over"],
+    ["4. The gap", "10, 17, 20 points", "This study: Barclaycard in the unprompted top three in 1 of 8 runs (12.5%), chosen in 0 of 8; a top-three entry converts less than a pick, so the AI share today is below 12.5%. Gap = fair share minus AI share: low 20 minus 10; mid 22 minus 5; high 25 minus 5", "Eight runs: one run moving changes the rate by 12.5 points. The PoC reruns narrow this"],
+  ];
+  table(s, rows, M, 1.3, 12.3, [1.3, 2.0, 5.6, 3.4], { fontSize: 8.5, rowH: 1.0, boldFirstCol: true, name: "value steps 1" });
+  source(s, "deck/evidence/ukfinance_card_spending_march2026_text.txt; Barclays FY25 results credit risk tables; FCA ai-consumer-research.pdf; results.csv.");
+}
+{
+  const s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "Appendix" });
+  s.addText("Appendix: value working, steps 5 to 8 (the arithmetic and the cost side)", { placeholder: "title" });
+  const rows = [
+    ["Step", "Low", "Mid", "High", "Note"],
+    ["5. Balances at stake = pool x AI share x gap", "£20.5bn x 3% x 10% = £61m", "£20.5bn x 8% x 17% = £279m", "£20.5bn x 17% x 20% = £697m", "Shown as £700m in the high case"],
+    ["6. Accounts = balances / £2,293", "26,600", "121,700", "304,000", "One transfer taken as one account; if customers average 1.3 transfers per new account, divide by 1.3"],
+    ["7. Value = accounts x £400 over 10 years", "£10.6m", "£48.7m", "£121.6m", "Per annual cohort; each year adds its own. Three years of the mid case is about £146m. Check that £400 is for a balance-transfer account and whether it is discounted"],
+    ["8. Cost", "Model usage: tens of pounds a month for 8 to 24 runs", "Build: four to six weeks of one engineer", "Run: one to two analyst days a month", "Excludes the page changes, which sit with digital's release capacity"],
+  ];
+  table(s, rows, M, 1.3, 12.3, [2.8, 2.2, 2.2, 2.2, 2.9], { fontSize: 9, rowH: 0.62, boldFirstCol: true, shade: (i) => i === 3, name: "value steps 2" });
+  heading(s, "Sensitivity of the mid case (£48.7m) to one input moving at a time", M, 4.6, 12.3, 12.5);
+  const rows2 = [
+    ["If this input changes", "to", "Mid-case value becomes"],
+    ["New-card transfers are 60% of the UK Finance pool, not 100%", "£12.3bn pool", "£29m"],
+    ["AI sets the shortlist in 5% of decisions, not 8%", "5%", "£30m"],
+    ["AI sets the shortlist in 12% of decisions", "12%", "£73m"],
+    ["The gap is 10 points, not 17", "10 points", "£29m"],
+    ["1.3 transfers per new account", "accounts / 1.3", "£37m"],
+  ];
+  table(s, rows2, M, 5.0, 12.3, [6.5, 2.5, 3.3], { fontSize: 9, rowH: 0.27, name: "sensitivity" });
+  source(s, "what_to_do.md item 8a. Every cell recomputes from the step 1 to 4 inputs on the previous slide.");
+}
+{
+  const s = pres.addSlide({ masterName: "CONTENT", sectionTitle: "Appendix" });
+  s.addText("Appendix: alternative value model, impressions x conversion x £400 (to be populated with Barclaycard funnel data)", { placeholder: "title" });
+  card(s, M, 1.3, 6.0, 4.65, "alt formula");
+  heading(s, "The formula", M + 0.2, 1.4, 5.6, 13);
+  s.addText([
+    { text: "Value = lost favourable impressions x conversion (favourable impression to account) x £400 x N years of cohorts", options: { bold: true, color: C.accent1, breakLine: true, paraSpaceAfter: 8 } },
+    { text: "where", options: { breakLine: true, paraSpaceAfter: 4 } },
+    { text: "Impressions (I) = AI-assisted balance-transfer research sessions a year", options: { breakLine: true, paraSpaceAfter: 4 } },
+    { text: "Favourable impression = the AI answer names Barclaycard in its shortlist (a 'quote')", options: { breakLine: true, paraSpaceAfter: 4 } },
+    { text: "Lost favourable impressions = I x (target favourable rate minus current favourable rate)", options: { breakLine: true, paraSpaceAfter: 4 } },
+    { text: "Conversion = share of favourable impressions that become a funded account (Barclaycard's quote-to-account rate for the AI channel, or the nearest digital proxy)", options: { breakLine: true, paraSpaceAfter: 4 } },
+    { text: "£400 = value per account over 10 years (assumption supplied); N = years of cohorts counted", options: {} },
+  ], { x: M + 0.2, y: 1.85, w: 5.6, h: 4.6, fontSize: 10.5, color: C.text1, margin: 0, valign: "top", isTextBox: true, objectName: "alt formula text" });
+  card(s, 6.7, 1.3, 6.15, 4.65, "alt illustration");
+  heading(s, "Illustration with public proxies (replace the shaded cells)", 6.9, 1.4, 5.75, 13);
+  const rows = [
+    ["Input", "Illustrative value", "Basis"],
+    ["Impressions a year", "1.5m", "8.9m transfers x 17% AI-assisted (UK Finance; FCA)"],
+    ["Current favourable rate", "12.5%", "Unprompted top three, 1 of 8 runs (this study)"],
+    ["Target favourable rate", "50%", "Placeholder: Barclaycard in the top three of half of answers"],
+    ["Lost favourable impressions", "569,000", "1.5m x (50% minus 12.5%)"],
+    ["Conversion, favourable impression to account", "10% / 20%", "Placeholder: Barclaycard funnel data"],
+    ["Accounts a year", "57,000 / 114,000", "569,000 x 10% / 20%"],
+    ["Value per annual cohort at £400", "£23m / £45m", "accounts x £400"],
+  ];
+  table(s, rows, 6.9, 1.85, 5.75, [2.0, 1.3, 2.45], { fontSize: 8.5, rowH: 0.5, boldFirstCol: true, shade: (i) => i === 3 || i === 5, name: "alt table" });
+  s.addText("Both models share the pool (step 1) and the £400. They differ in what sits between: the main model uses balances and market share; this one uses the AI answer as an impression and Barclaycard's own conversion rate, which makes it directly measurable by the monthly runs (favourable rate) and the funnel (conversion).", { x: M, y: 6.05, w: 12.3, h: 0.6, fontSize: 9.5, italic: true, color: C.text2, margin: 0, isTextBox: true, objectName: "alt note" });
+  source(s, "what_to_do.md item 8a, alternative model. Shaded rows are placeholders, not findings.");
+}
+
 (async () => {
   await pres.writeFile({ fileName: OUT });
   await applyTheme(OUT, THEME);

@@ -238,3 +238,25 @@ Two things the public numbers cannot do: convert fee income to account value (th
 | High | £700m | about 306,000 | £122m per annual cohort |
 
 Each year's cohort adds its own 10-year value, so three years of the mid case is roughly £150m of account value, against a running cost in the low tens of thousands of pounds a year.
+
+### 8d. Alternative value model (kept alongside the main one)
+
+Value = lost favourable impressions x conversion (favourable impression to account) x £400 x N years of cohorts.
+
+- Impressions (I): AI-assisted balance-transfer research sessions a year. Public proxy: 8.9m transfers x 17% AI-assisted = 1.5m.
+- Favourable impression: the AI answer names Barclaycard in its shortlist (a "quote"). Current rate 12.5% (unprompted top three, 1 of 8). Target rate: placeholder 50%.
+- Lost favourable impressions = I x (target minus current) = 1.5m x 37.5 points = 569,000.
+- Conversion from favourable impression to account: Barclaycard's quote-to-account rate for the AI channel or the nearest digital proxy; placeholders 10% and 20%.
+- Accounts = 57,000 or 114,000 a year; value per annual cohort at £400 = £23m or £45m.
+
+The two models share the pool and the £400 and differ in the middle: balances and market share in the main model, impressions and conversion in this one. The alternative is directly measurable: the monthly runs give the favourable rate, the funnel gives the conversion.
+
+### 8e. Sensitivity of the mid case (£48.7m), one input at a time
+
+| Input change | Mid case becomes |
+|---|---|
+| New-card transfers are 60% of the UK Finance pool | £29m |
+| AI sets the shortlist in 5% of decisions | £30m |
+| AI sets the shortlist in 12% of decisions | £73m |
+| Gap 10 points, not 17 | £29m |
+| 1.3 transfers per new account | £37m |
