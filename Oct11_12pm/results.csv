@@ -1,0 +1,9 @@
+run,model,branch,credit,turn1_questions,turn2_top_pick,turn2_fee,turn2_months,turn3_first_fallback,turn3_other_fallbacks,sources_turn1
+A-haiku,Haiku 5.5,A,good,1,Nationwide balance transfer card,2.99%,30,HSBC 36m,"Barclaycard 36m; Santander 12m no fee","Which?; Finder; Nationwide; Money to the Masses"
+A-sonnet,Sonnet 5.5,A,good,4,Lloyds Bank Platinum,2.49%,33,Nationwide 30m,"Virgin Money; TSB 38m; NatWest/RBS","Nationwide; ClearScore; Which?; RBS; Moneyfacts"
+A-opus,Opus 5.5,A,good,3,HSBC 36-month,3.09%,36,Virgin Money or NatWest 36m,"24m cards; personal loan","Which?; Finder; Gazette; MoneySavingExpert"
+A-fable,Fable 5.1,A,good,3,Barclaycard Platinum 36-month,3.15%,36,HSBC 36m then NatWest 36m,"Tesco Bank; M&S Bank; Halifax; MBNA","Which?; Finder; Compare the Market; Kaeltripton; ClearScore; Nationwide; Money to the Masses; LoveMoney"
+B-haiku,Haiku 5.5,B,fair,1,Virgin Money,1.95%,24,Capital One 36m,"Tesco Bank 20m; Halifax or Lloyds 35m; personal loan; StepChange; Citizens Advice; MoneyHelper","Which?; MoneySavingExpert; Moneyfacts"
+B-sonnet,Sonnet 5.5,B,fair,4,HSBC Balance Transfer (Visa),3.09%,36,Virgin Money 36m,"NatWest 36m; TSB; Vanquis","Which?; Finder; Compare the Market; ClearScore"
+B-opus,Opus 5.5,B,fair,4,HSBC 36-month,3.09%,36,Virgin Money 36m,"Tesco Bank 24m; Vanquis; personal loan","Which?; Finder; Compare the Market; MoneySavingExpert; Gazette"
+B-fable,Fable 5.1,B,fair,1,Barclaycard Platinum,3.15%,up to 36,Vanquis Low APR 36m no fee,"Fluid; Aqua; Capital One; Tesco fair-credit tier; stop and wait","Which?; MoneySavingExpert; Finder; Santander; RBS; Uswitch"

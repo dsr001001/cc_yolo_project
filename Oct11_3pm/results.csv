@@ -1,0 +1,13 @@
+run,model,branch,web,t2_first,t2_second,t2_third,barclaycard_in_t2_top3,t3_barclaycard_placement,t3_product,t4_pick,t4_first_switch,barclaycard_page_opened,errors_or_corrections
+A-haiku,Haiku 5.5,A,yes,HSBC 36m 3.09%,Virgin Money 36m 3.1%,TSB 38m 3.49%,no,2nd,36m,HSBC 36m,Barclaycard 36m,barclays.co.uk only,Vanquis 36m 0% fee at T1 corrected at T2 and T5
+A-sonnet,Sonnet 5.5,A,yes,Virgin Money 35m 2.45%,Halifax 35m 2.49%,HSBC 36m 3.09%,no,4th and 5th,36m and 22m,Virgin Money 35m 2.45%,Halifax then HSBC,yes,Pick based on Moneyfacts chart dated July 2026; never found MSE
+A-opus,Opus 5.5,A,yes,HSBC 36m 3.09%,Virgin Money 24m 1.95%,Capital One up to 36m 2.9%,no,3rd if pre-approved,36m,HSBC 36m,Barclaycard 36m if pre-approved,yes (search page),Corrected 'definite' label and a mis-attributed MSE claim at T5
+A-fable,Fable 5.1,A,yes,Virgin Money 24m 1.95%,HSBC 36m 3.09%,Barclaycard 22m 1.49%,yes 3rd,3rd (22m) and 4th (36m),22m,Virgin Money 24m 1.95%,HSBC; Barclaycard 22m if pre-approved,yes,Corrected a mis-attributed MSE claim at T5
+B-haiku,Haiku 5.5,B,yes,Tesco Low Fee 20m 1.25%,Tesco 35m 3.15%,HSBC 36m 3.09%,no,2nd (22m),22m,Tesco Low Fee 20m,Barclaycard 22m,yes,None
+B-sonnet,Sonnet 5.5,B,yes,Virgin Money 36m 3.1%,HSBC 36m 3.09%,Tesco 35m 3.15%,no,2nd (22m); 36m excluded,22m,Virgin Money 36m 3.1%,Barclaycard 22m,yes,Wrongly said 36m card requires a Barclays current account; never found MSE
+B-opus,Opus 5.5,B,yes,HSBC 36m 3.09%,Nationwide 30m 2.99%,Virgin Money 36m,no,joint 1st,36m,HSBC 36m,Barclaycard 36m,listing page (product page 404),Flagged Money to the Masses 3.45% as stale
+B-fable,Fable 5.1,B,yes,Virgin Money 24m 1.95%,Capital One up to 36m 2.9%,Tesco Low Fee 20m 1.25%,no,joint 2nd if pre-approved; 22m 4th,36m,Virgin Money 24m 1.95%,Capital One; Barclaycard 36m if pre-approved,yes,None
+ctl-haiku,Haiku 5.5,A,no,Barclaycard,MBNA,Santander or Virgin,yes 1st,top candidate,unspecified,Barclaycard (conditional),MBNA,n/a,Figures from memory: 18 to 30m about 3%
+ctl-sonnet,Sonnet 5.5,A,no,MBNA,Barclaycard,Virgin or Tesco or Sainsbury's,yes 2nd,2nd,unspecified,MBNA (conditional),Barclaycard,n/a,Figures from memory: 20 to 29m
+ctl-opus,Opus 5.5,A,no,Santander Everyday Long Term,Lloyds or Halifax,Barclaycard or Virgin,yes 3rd,3rd possibly 1st,long card,Santander,Barclaycard if 24m+ at 3% or less,n/a,Recalled 3.45% fee and 27 to 33m for the long card
+ctl-fable,Fable 5.1,A,no,Tesco,HSBC,NatWest or RBS,no,mid-length variant 1st if it exists,mid-length,Tesco,Barclaycard if 24m+ at 2.5% or less,n/a,Recalled 31 to 33m at 3.45% and a 24 to 27m tier at 1.5 to 2.5%

@@ -1,0 +1,9 @@
+run,model,branch,credit,t1_first,t1_second,t1_third,t2_first,t2_second,t2_third,opened_pages_before_t3,relied_on_most,provider_pages_checked,queries_run
+A-haiku,Haiku 5.5,A,good,Barclaycard 14m no fee,Barclaycard 36m 3.15%,Nationwide 30m 2.99%,HSBC 36m 3.09%,Nationwide 30m 2.99%,Virgin Money 36m 3.1%,no,"Kaeltripton; Money to the Masses; MSE snippets","HSBC (turn 3 only)",8
+A-sonnet,Sonnet 5.5,A,good,TSB 38m 3.49%,HSBC/NatWest/Virgin 36m ~3.1%,Barclaycard 12m no fee,HSBC or Virgin Money 36m ~3.1%,Barclaycard Platinum (conflicting),Lloyds Platinum 23m 2.99%,no,"Which?; Money to the Masses","HSBC (turn 3 only)",6
+A-opus,Opus 5.5,A,good,HSBC 36m 3.09%,Tesco Bank 20m 1.25%,Barclaycard 12m no fee,HSBC 36m 3.09%,Virgin Money 24m 1.95%,Virgin Money 36m 3.1%,yes,MSE,HSBC,6
+A-fable,Fable 5.1,A,good,Barclaycard 12m no fee,Tesco Bank 20m 1.25%,Barclaycard 36m 3.15%,Virgin Money 36m 3.1%,Virgin Money 24m 1.95%,HSBC 36m 3.09%,yes,MSE,"HSBC; Barclaycard; Virgin (general page)",5
+B-haiku,Haiku 5.5,B,fair,TSB 38m 3.49%,HSBC 36m 3.09%,Nationwide 30m 2.99%,HSBC 36m 3.09%,NatWest up to 36m 3.10%,Barclaycard 36m 3.15%,no,"Which?; Compare the Market; ClearScore",none,6
+B-sonnet,Sonnet 5.5,B,fair,HSBC 36m 3.09%,Vanquis Low APR 36m no fee,TSB 38m 3.49%,Tesco Bank 24m 2.75%,Lloyds Platinum 23m 2.99%,HSBC 36m 3.09%,no,Which?,none,5
+B-opus,Opus 5.5,B,fair,HSBC 36m 3.09%,TSB 38m 3.49%,Barclaycard 12m no fee,HSBC 36m 3.09%,Barclaycard 36m 3.15%,Santander Everyday Long Term 34m 3.15%,yes,"Provider pages; Which? for shortlist","HSBC; Barclays; Santander; Capital One; TSB",7
+B-fable,Fable 5.1,B,fair,Barclaycard 36m 3.15%,TSB 38m 3.49%,Barclaycard 14m no fee,Barclaycard 22m 1.49%,HSBC 36m 3.09%,Barclaycard 36m 3.15%,excerpts only,"MSE; Which?; provider excerpts","Barclaycard; HSBC; TSB; Virgin (excerpts)",12
