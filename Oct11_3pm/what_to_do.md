@@ -153,7 +153,7 @@ Note: the same block, with the same two offer bullets, is also on barclays.co.uk
 
 ## 7. Measuring whether the changes work
 
-**Proposal.** Rerun the same protocol (Oct11_3pm/protocol.md: same persona, two credit profiles, four model families, five turns, web search on) monthly, and report:
+**Proposal.** Rerun the same protocol (Oct11_3pm/protocol.md: same persona, two credit profiles, four Claude models, five turns, web search on) monthly, and report:
 
 | Metric | Baseline, 11 October 2026 |
 |---|---|
@@ -167,7 +167,7 @@ Note: the same block, with the same two offer bullets, is also on barclays.co.uk
 | Runs quoting a Barclaycard fee or APR that differs from barclaycard.co.uk on the day | 3 of 8 (3.45% in Opus B; 28.9% seen by two runs) |
 | Runs reporting a Barclaycard page 404 or using a search page as the source | 5 of 8 |
 
-Eight runs is a small sample: one run moving changes a rate by 12.5 points, so read three months of direction, not a single month. Keep all four model families so a change in one vendor's retrieval is not read as a market change.
+Eight runs is a small sample: one run moving changes a rate by 12.5 points, so read three months of direction, not a single month. All four models are Anthropic Claude models, so the baseline describes one vendor's assistants; add other vendors before reading it as the market (correction, 8 November 2026).
 
 **Questions put to the Head of Credit Cards.**
 1. Who owns the monthly rerun and the report: the card team, digital, or the agency?
@@ -212,7 +212,7 @@ Two things the public numbers cannot do: convert fee income to account value (th
 
 ### 8b. Proof of concept: scope, success criteria, duration
 
-- **Scope.** One product family (balance transfers), the existing persona with two credit profiles, four model families, web search on, five turns. Eight runs per cycle. The baseline is done (11 October 2026).
+- **Scope.** One product family (balance transfers), the existing persona with two credit profiles, four Claude models, web search on, five turns. Eight runs per cycle. The baseline is done (11 October 2026).
 - **Cycles.** Three: November, December, January. Plus one before-and-after cycle timed to the first site change (items 1, 2 and 4), run the week after the change goes live.
 - **Success criteria.** Measured against the item 7 baseline: the 22 month card seen from a guide in at least 4 of 8 runs; no run with a wrong eligibility claim; no run quoting a rate or fee that differs from barclaycard.co.uk; Barclaycard in the unprompted top three in at least 3 of 8 runs by cycle three.
 - **Deliverables.** The scoring rubric (results.csv columns, written down); three cycle reports on one page each; a decision at the end of January on widening personas (a £5,000 debt, a 36 month plan, an existing Barclays customer) and products (purchase cards, loans).

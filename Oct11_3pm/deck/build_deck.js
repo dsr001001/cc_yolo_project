@@ -341,7 +341,7 @@ pres.addSection({ title: "Introduction" });
     s.addText(t[2], { x: x + 0.15, y: 2.72, w: 2.6, h: 0.4, fontSize: 9, color: C.text1, margin: 0, valign: "top", isTextBox: true, objectName: "exec sub " + i });
   });
   bullets(s, [
-    [{ text: "What was done. ", options: { bold: true } }, { text: "On 11 October 2026 four AI assistants (Haiku, Sonnet, Opus, Fable) with web search were each asked, twice, to recommend a 0% balance transfer card to a UK customer with £3,000 of card debt, over five turns: a top three, the customer's details, a question about Barclaycard, a forced single pick, and a request to show every source. Forty turns, every reply logged with the pages it opened." }],
+    [{ text: "What was done. ", options: { bold: true } }, { text: "On 11 October 2026 four AI assistants from one vendor, Anthropic's Claude models (Haiku, Sonnet, Opus, Fable), with web search were each asked, twice, to recommend a 0% balance transfer card to a UK customer with £3,000 of card debt, over five turns: a top three, the customer's details, a question about Barclaycard, a forced single pick, and a request to show every source. Forty turns, every reply logged with the pages it opened." }],
     [{ text: "Why Barclaycard loses. ", options: { bold: true } }, { text: "The assistants build the shortlist from comparison guides (Which?, MoneySavingExpert) and check provider pages second. The guides do not list the 22 month 1.49% card, the best fit for this customer, and label the 36 month card 'up to' against HSBC's 'definite'. Barclaycard's own pages carry no eligibility line, put promotional text above the terms, return 404s on product pages, and show an APR that contradicts the headline. The 3.15% fee decided ties against HSBC's 3.09%." }],
     [{ text: "What is not wrong. ", options: { bold: true } }, { text: "Every figure an assistant read from barclaycard.co.uk was reported correctly. With no web access, every assistant names Barclaycard among the leaders from memory. The gap is in distribution and disclosure, not awareness or price." }],
   ], M, 3.4, 12.3, 3.2, { fontSize: 11.5 });
@@ -651,7 +651,7 @@ pres.addSection({ title: "What to do" });
   heading(s, "Reading the numbers", 9.4, 1.3, 3.45, 12.5);
   bullets(s, [
     "Eight runs: one run moving changes a rate by 12.5 points. Read three cycles of direction, not one month",
-    "Keep all four model families, so a change in one vendor's retrieval is not read as a market change",
+    "All four models are Anthropic Claude models: the result describes one vendor's assistants. Add other vendors (ChatGPT, Gemini, Copilot, Perplexity) before reading it as the market",
     "Every metric is a count from the transcripts, scored the same way as results.csv, so a reviewer can recount it",
     "Personas widen after the PoC: a £5,000 debt, a 36 month plan, an existing Barclays customer",
   ], 9.4, 1.75, 3.45, 4.8, { fontSize: 10.5 });
@@ -691,7 +691,7 @@ pres.addSection({ title: "What to do" });
   card(s, M, 1.3, 5.9, 5.3, "poc");
   heading(s, "Proof of concept, owned by the Head of Credit Cards", M + 0.2, 1.4, 5.5, 13);
   bullets(s, [
-    [{ text: "Scope: ", options: { bold: true } }, { text: "balance transfers only; the existing persona with two credit profiles; four model families; web search on; five turns; eight runs a cycle. Baseline done 11 October." }],
+    [{ text: "Scope: ", options: { bold: true } }, { text: "balance transfers only; the existing persona with two credit profiles; four Claude models (one vendor); web search on; five turns; eight runs a cycle. Baseline done 11 October." }],
     [{ text: "Cycles: ", options: { bold: true } }, { text: "November, December, January, plus one before-and-after cycle the week after the first site change (items 1, 2, 4) goes live." }],
     [{ text: "Success criteria: ", options: { bold: true } }, { text: "the item 7 targets: 22 month card seen from a guide in 4 of 8; no wrong eligibility claim; no rate or fee differing from the site; unprompted top three in 3 of 8 by cycle three." }],
     [{ text: "Deliverables: ", options: { bold: true } }, { text: "the written scoring rubric; a one-page report per cycle; an end-of-January decision on widening personas and products." }],

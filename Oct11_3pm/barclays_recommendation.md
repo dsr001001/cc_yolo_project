@@ -85,7 +85,7 @@ It is the only change that affects the unprompted shortlist, which is where seve
 
 - **Not a brand-awareness problem.** Every model names Barclaycard from memory with no web access, and Haiku and Sonnet rank it first or second there. The prior is strong.
 - **Not an accuracy problem on barclaycard.co.uk.** Every figure a model read from the page was reported correctly. The errors came from pages the models could not reach (Haiku A on barclays.co.uk), from third-party sites (3.45%), and from one summariser merge (Sonnet B).
-- **Not a problem with a single model.** The unprompted exclusion happened in all four model families and both credit branches. The one unprompted inclusion (Fable A) came from the model opening barclaycard.co.uk at turn 1, which is the behaviour item 1 would make unnecessary.
+- **Not a problem with a single model.** The unprompted exclusion happened in all four Claude models (one vendor) and both credit branches. The one unprompted inclusion (Fable A) came from the model opening barclaycard.co.uk at turn 1, which is the behaviour item 1 would make unnecessary.
 
 ## 5. How to measure whether the actions worked
 
